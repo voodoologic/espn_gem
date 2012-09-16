@@ -1,5 +1,6 @@
-require 'mechinize'
+require 'rubygems'
 require 'nokogiri'
+require 'mechanize'
 module Espn
   class Team
 
