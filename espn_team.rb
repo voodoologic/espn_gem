@@ -17,6 +17,7 @@ module Espn
     end
 
     def get_name(nokogiri_obj)
+      raise nokogiri_obj.inspect
       nokogiri_obj.css("h3").first.children.first.text.strip
     end
 

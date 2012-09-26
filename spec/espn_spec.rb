@@ -52,10 +52,10 @@ describe Espn::Team, :vcr do
   let (:team_url) {"http://games.espn.go.com/ffl/clubhouse?leagueId=1193126&teamId=1&seasonId=2012"}
   let (:team) { Espn::Team.new(team_url, OpenStruct.new(:wins => 0)) }
   credentials = YAML::load(File.open('credentials.yml'))
-  it 'should have stats', :vcr do
-    agent = WWW::Mechanize.new
+  it 'should have stats', :vcr => { :record => :new_episodes } do
+    agent = Mechanize.new
     agent.get(team_url)
-    form = agent.page.forms.first
+    form = agent.page.forms.last
     form.username = credentials["username"]
     form.password = credentials["password"]
     form.submit

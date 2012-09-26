@@ -376,4 +376,486 @@ http_interactions:
         End SiteCatalyst code version: H.21. --></body>\n</html>\n"
     http_version: 
   recorded_at: Sun, 09 Sep 2012 23:36:07 GMT
+- request:
+    method: post
+    uri: https://r.espn.go.com/espn/memberservices/pc/login
+    body:
+      encoding: UTF-8
+      string: failedAttempts=2&SUBMIT=1&failedLocation=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fsignin%3Fredir%3Dhttp%253A%252F%252Fgames.espn.go.com%252Fffl%252Fclubhouse%253FteamId%253D1%2526leagueId%253D1193126%2526seasonId%253D2012%26e%3D1&aff_code=espn_fantgames&appRedirect=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012&cookieDomain=.go.com&multipleDomains=true&noscript=true&username=&password=
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p194 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - r.espn.go.com
+      Referer:
+      - &70357978028760 !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: games.espn.go.com
+        port: 80
+        path: /ffl/signin
+        query: redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '440'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '559'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Location:
+      - /espn/inc/secureRedirect?appRedirect=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fsignin%3Fredir%3Dhttp%253A%252F%252Fgames.espn.go.com%252Fffl%252Fclubhouse%253FteamId%253D1%2526leagueId%253D1193126%2526seasonId%253D2012%26e%3D1
+      Server:
+      - barista/3.3.6
+    body:
+      encoding: US-ASCII
+      string: <HTML><HEAD><TITLE>Moved Temporarily</TITLE></HEAD><BODY>This document
+        has moved to <A HREF="/espn/inc/secureRedirect?appRedirect=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fsignin%3Fredir%3Dhttp%253A%252F%252Fgames.espn.go.com%252Fffl%252Fclubhouse%253FteamId%253D1%2526leagueId%253D1193126%2526seasonId%253D2012%26e%3D1">/espn/inc/secureRedirect?appRedirect=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fsignin%3Fredir%3Dhttp%253A%252F%252Fgames.espn.go.com%252Fffl%252Fclubhouse%253FteamId%253D1%2526leagueId%253D1193126%2526seasonId%253D2012%26e%3D1</A>.<BODY></HTML>
+    http_version: 
+  recorded_at: Sun, 16 Sep 2012 23:08:28 GMT
+- request:
+    method: get
+    uri: https://r.espn.go.com/espn/inc/secureRedirect?appRedirect=http://games.espn.go.com/ffl/signin?redir=http%253A%252F%252Fgames.espn.go.com%252Fffl%252Fclubhouse%253FteamId%253D1%2526leagueId%253D1193126%2526seasonId%253D2012%26e=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p194 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - r.espn.go.com
+      Referer:
+      - *70357978028760
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '971'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Server:
+      - barista/3.3.6
+    body:
+      encoding: US-ASCII
+      string: ! "\n\n\t<html>\n\t<head>\n\n\t\n\t\t<script language=\"javascript\"
+        type=\"text/javascript\">\n\t// <!--\t\n\t\tfunction writeRedirectLink() {\n\t\t\tdocument.writeln(\"<font
+        size=2 face=verdana><b>Your request timed out. <A HREF=\\\"http://games.espn.go.com/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012&e=1\\\">Please
+        click here to continue</A>.</b></font>\");\n\t\t}\n\n\t\tlocation.replace('http://games.espn.go.com/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012&e=1');\n\t\tvar
+        the_timeout = setTimeout(\"writeRedirectLink()\", 10000);\n\t// -->\n\t\t</SCRIPT>\n\t\t<NOSCRIPT>\n\t\t\t<font
+        size=2 face=verdana>\n\t\t\t\t<b>Your request timed out. <A HREF=\"http://games.espn.go.com/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012&e=1\">Please
+        click here to continue</A>.</b>\n\t\t\t</font>\n\t\t</NOSCRIPT>\n\t</head>\n\t</html>"
+    http_version: 
+  recorded_at: Sun, 16 Sep 2012 23:08:28 GMT
+- request:
+    method: get
+    uri: http://games.espn.go.com/ffl/clubhouse?leagueId=1193126&seasonId=2012&teamId=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '349'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Location:
+      - /ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012
+      Server:
+      - barista/3.3.6
+      Set-Cookie:
+      - FFL_LM_COOKIE=AAAAARoAAAAEAQAIc2Vhc29uSWQDAAAH3AEACGxlYWd1ZUlkAwASNKYBAAtjb3VudHJ5Q29kZQEAA3VzYQEAD2NsaWVudElQQWRkcmVzcwEADTI0LjE4LjE1OS4xMzk;
+        expires=Sat, 05-Oct-2080 02:22:36 GMT; path=/ffl; domain=games.espn.go.com;
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRoBUS
+        PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+    body:
+      encoding: US-ASCII
+      string: <HTML><HEAD><TITLE>Moved Temporarily</TITLE></HEAD><BODY>This document
+        has moved to <A HREF="/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012">/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012</A>.<BODY></HTML>
+    http_version: 
+  recorded_at: Sun, 16 Sep 2012 23:08:29 GMT
+- request:
+    method: get
+    uri: http://games.espn.go.com/ffl/signin?redir=http://games.espn.go.com/ffl/clubhouse?teamId=1%26leagueId=1193126%26seasonId=2012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate, proxy-revalidate, maxage=0
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '27118'
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Server:
+      - barista/3.3.6
+      Set-Cookie:
+      - FFL_LM_COOKIE=AAAAARoAAAAEAQAIc2Vhc29uSWQDAAAH3AEACGxlYWd1ZUlkA4AAAAABAAtjb3VudHJ5Q29kZQEAA3VzYQEAD2NsaWVudElQQWRkcmVzcwEADTI0LjE4LjE1OS4xMzk;
+        expires=Sat, 05-Oct-2080 02:22:36 GMT; path=/ffl; domain=games.espn.go.com;
+      X-Frame-Options:
+      - SAMEORIGIN
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRoBUS
+        PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>\n<head>\n<title>Sign
+        In - Free Fantasy Football -  ESPN</title>\n<!-- N7ESPNAPP271.mgmt.prod:2775
+        -->\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<meta
+        http-equiv=\"Content-Script-Type\" content=\"text/javascript\">\n<meta name=\"robots\"
+        content=\"noindex\">\n<meta http-equiv=\"Pragma\" content=\"no-cache\">\n<meta
+        http-equiv=\"Cache-Control\" content=\"no-cache, must-revalidate, proxy-revalidate,
+        maxage=0\">\n<meta http-equiv=\"Expires\" content=\"-1\">\n\n\n\t\t<script
+        type=\"text/javascript\">\n\t\t/* omniture ad tracking v0.1 24Jun08 */\n\t\tvar
+        anAds;\n\t\tanAds=\"\";\n\t\tfunction anPassAds(str) {\n\t\t\tanAds=anAds?anAds+\",ads;\"+str+\";;;event38=1\":\"ads;\"+str+\";;;event38=1\";\n\t\t}\n\t\t</script>\n<link
+        rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c?css=fantasy_reset.r1.css,base.r234.css,modules.r422.css,global_header.r38.css,modules/global_nav.r52.css,modules/insider_enhanced.200910131831.css,registration/facebook.button.v2.css,registration/v3_1.facebook.v2.css,modules/browser-alert.r7.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\">\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?css=espn.teams.r3.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\">\n<style type=\"text/css\">\n#content{width:990px
+        !important;}\n#header{width:990px !important;}\n#nav-wrapper-container{width:990px
+        !important;}\n#nav-main ul.top li .wrapper{width:984px !important;}\n#content.container
+        { padding: 0; }\n</style>\n<style type=\"text/css\">\n</style>\n\r\n<link
+        rel=\"stylesheet\" type=\"text/css\" href=\"http://g.espncdn.com/ffl/static/css/main?v=2488814192711\">\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/jquery/1.7.1/jquery.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/jqueryui/1.8.16/jquery-ui.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/swfobject/2.2/swfobject.js\"></script>\n<script
+        type=\"text/javascript\" charset=\"iso-8859-1\" src=\"http://a.espncdn.com/combiner/c/?js=plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,flashObjWrapper.r7.js,espn.core.duo.r54.js,stub.search.r9.js,espn.nav.mega.r33.js,espn.storage.r6.js,espn.p13n.r15.js,espn.video.r54.js,registration/staticLogin.r10-28.js,registration/espn.overlay.stub.r3-18.js,espn.insider.r5.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r13.js,espn.gallery.0628.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/prototype/1.6.0.2/prototype.js\"></script>\n<script
+        type=\"text/javascript\">\n\ncom = { espn: {\n\tenv: {\n\t\tav: navigator.appVersion,\n\t\tua:
+        navigator.userAgent,\n\t\tan: navigator.appName,\n\t\tplatform: navigator.platform,\n\t\tIE:
+        \"Microsoft Internet Explorer\",\n\t\tNS: \"Netscape\",\n\t\tMAC: \"MacPPC\",\n\n\t\thost:
+        \"games.espn.go.com\",\n\t\tcontext: \"signin\"\n\t},\n\tlisteners: {},\n\tgames:
+        {\n\t\tgameRoot: \"ffl\",\n\t\tleagueId: 0,\n\t\tseasonId: 2012,\n\t\ttoTeamId:
+        -2147483648,\n\t\tfromTeamId: -2147483648,\n\t\tscoringPeriodId: 2,\n\t\tcurrentScoringPeriodId:
+        2,\n\t\tleagueType: -1\n\t}\n}};\n\ncom.espn.games.isLeagueManager = false;com.espn.games.isLeagueCreator
+        = false;com.espn.games.isLeagueMember = false;com.espn.games.userLoggedIn
+        = false;var GAMEROOT = \"ffl\";var host = \"games.espn.go.com\";var gameRoot
+        = \"ffl\";var teamId = -2147483648;</script><script type=\"text/javascript\"
+        src=\"http://g.espncdn.com/ffl/static/js/libraries?v=314524\"></script>\n<script
+        type=\"text/javascript\">\n</script>\n<script type=\"text/javascript\"></script>\n</head><body
+        class=\"trans-fantasy context-signin games-ad-none\">\n<!--[if IE 6]><div
+        class=\"ie ie6\"><![endif]-->\n<!--[if IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if
+        IE 8]><div class=\"ie ie8\"><![endif]-->\n<div class=\"bg-elements\">\n<table
+        class=\"maincontainertbl\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"maincontainertblcell\"
+        valign=\"top\" id=\"maincontainertblcell\"><div id=\"header\" class=\"container\">\n<!--
+        ////////// start: Transitional Header ////////// --><div class=\"top-bar\">\n<!--
+        begin uni login -->\n<script type=\"text/javascript\">\nvar returnURL = document.location.href;\nvar
+        anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','activateinsider':'Activate
+        Insider'};\n</script>\n\n\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn_fantgames\"/>\n<input type=\"hidden\"
+        name=\"regFormId\" id=\"regFormId\" value=\"espn_ffl\"/>\n</form>\n<div class=\"signin\"
+        id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script><div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://espndeportes.espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=deportes\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n\t<li><a
+        href=\"http://www.espnstar.com/\" name=\"&amp;lpos=editionsnav&amp;lid=asia\">Asia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div class=\"nav-edition\">\n<label>CITIES:</label>\n<ul
+        class=\"main\">\n\t<li class=\"e-boston\"><a href=\"http://espn.go.com/boston/\"
+        name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li class=\"e-chicago\"><a
+        href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div></div>\n<div
+        class=\"espn-logo\">\n<h1>\n<a href=\"http://espn.go.com\" class=\"espn\">ESPN</a>\n<img
+        src=\"http://g.espncdn.com/s/ffllm/12/images/shell/bgHead.png\" height=\"69\">\n</h1>\n</div>\n<div
+        class=\"presby\">\n\n<!-- begin ad tag (tile=1) -->\n<script language=\"JavaScript\"
+        type=\"text/javascript\">\nvar adSegments = espn.core.ad_segments();\nvar
+        pipedAdSegments = adSegments.replace(/;/g, \"|\").substring(0,adSegments.length-1);\nvar
+        adURI = \"espn.us.com.games/football\" + \";pgn=SignIn;pgtyp=signin;lang=en;gm=ffl;pos=SponsoredByLogoHeader;\"
+        + adSegments + \"u=pgn=SignIn|pgtyp=signin|lang=en|gm=ffl|pos=SponsoredByLogoHeader|\"
+        + pipedAdSegments + \";dcopt=ist;sz=150x45;tile=1;ord=9685088\" + \"?\";\ndocument.write('<script
+        language=\"JavaScript\" src=\"http://ad.Doubleclick.net/adj/' + adURI + '\"
+        type=\"text/javascript\"><\\/script>');\n</script><noscript><a href=\"http://ad.doubleclick.net/jump/espn.us.com.games/football;pgn=SignIn;pgtyp=signin;lang=en;gm=ffl;pos=SponsoredByLogoHeaderu=pgn=SignIn|pgtyp=signin|lang=en|gm=ffl|pos=SponsoredByLogoHeader|;dcopt=ist;sz=150x45tile=1;ord=9685088\"
+        target=\"_blank\"><img src=\"http://ad.doubleclick.net/ad/espn.us.com.games/football;pgn=SignIn;pgtyp=signin;lang=en;gm=ffl;pos=SponsoredByLogoHeaderu=pgn=SignIn|pgtyp=signin|lang=en|gm=ffl|pos=SponsoredByLogoHeader|;dcopt=ist;sz=150x45tile=1;ord=9685088\"
+        width=\"150\" height=\"45\" border=\"0\" alt=\"\"></a></noscript>\n<!-- End
+        ad tag -->\n\n</div>\t  <div id=\"shop\">\n\t  \t<a class=\"shop-btn\" href=\"http://espnshop.com/entry.point?target=Z&amp;source=ESPN_HPHEADERLINK:SHOPBUTTONHEADER:6_1_10\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\">Shop</a>\n\t  </div>\n\t
+        \ <div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        class=\"clearfix\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text ui-autocomplete-input\" type=\"text\" placeholder=\"Search\"
+        name=\"searchString\" id=\"searchString\" role=\"textbox\" aria-autocomplete=\"list\"
+        aria-haspopup=\"true\"><input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\">\n<input
+        type=\"hidden\" name=\"fromForm\" value=\"true\">\n<input class=\"submit\"
+        type=\"submit\" value=\"\">\n</div>\n</form>\n</div>\n</div>\n<div id=\"subheader\"><div
+        id=\"content-wrapper\">\n<div id=\"content\" class=\"container\">\n<div>\n\n<!--[if
+        lte IE 6]>\n<div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:
+        none;\">\n\t<div class=\"mod-container mod-no-header-footer browser-alert\">\n\t\t<div
+        class=\"mod-content\">\n\t\t\t<div class=\"gradient-container\">\n\t\t\t\t<h1><span>Your
+        Web Browser</span> is no longer supported</h1>\n\t\t\t\t<p>To experience everything
+        that ESPN.com has to offer, we recommend that you upgrade to a newer version
+        of your web browser. Click the upgrade button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a class=\"btn-upgrade\" href=\"'+browserUrl+'\">Upgrade</a></li>\n\t\t\t\t\t<li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<script>\n\t(function($)
+        {\n\t\t  setTimeout(function () {\n\t\t\t\tvar $alertWrapper = $('#browser-alert-wrapper'),\n\t\t\t\t\t
+        \ browserAlertOptOut = espn.cookie.get('browseralert');\n\t\t\t\tif (browserAlertOptOut
+        != 'true') {\n\t\t\t\t\t  $(\"<a class=\\\"btn-close\\\" href=\\\"#\\\">Close</a>\").bind('click',
+        function (e) {\n\t\t\t\t\t\t\t$alertWrapper.hide();\n\t\t\t\t\t\t\tespn.cookie.set('browseralert','true',30);\n\t\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t  }).appendTo('.gradient-container',$alertWrapper);\n\t\t\t\t\t
+        \ $alertWrapper.show();\n\t\t\t\t\t  espn.cookie.set('browseralert','true');\n\t\t\t\t}\n\t\t
+        \ },100);\n\t})(jQuery);\n</script>\n<![endif]-->\n<div class=\"header-ad\">\n\n<!--
+        begin ad tag (tile=2) -->\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar
+        adSegments = espn.core.ad_segments();\nvar pipedAdSegments = adSegments.replace(/;/g,
+        \"|\").substring(0,adSegments.length-1);\nvar adURI = \"espn.us.com.games/football\"
+        + \";pgn=leaders;pgtyp=signin;lang=en;gm=ffl;pos=pencil_top;\" + adSegments
+        + \"u=pgn=leaders|pgtyp=signin|lang=en|gm=ffl|pos=pencil_top|\" + pipedAdSegments
+        + \";dcopt=ist;sz=924x50;tile=2;ord=9685088\" + \"?\";\ndocument.write('<script
+        language=\"JavaScript\" src=\"http://ad.Doubleclick.net/adj/' + adURI + '\"
+        type=\"text/javascript\"><\\/script>');\n</script><noscript><a href=\"http://ad.doubleclick.net/jump/espn.us.com.games/football;pgn=leaders;pgtyp=signin;lang=en;gm=ffl;pos=pencil_topu=pgn=leaders|pgtyp=signin|lang=en|gm=ffl|pos=pencil_top|;dcopt=ist;sz=924x50tile=2;ord=9685088\"
+        target=\"_blank\"><img src=\"http://ad.doubleclick.net/ad/espn.us.com.games/football;pgn=leaders;pgtyp=signin;lang=en;gm=ffl;pos=pencil_topu=pgn=leaders|pgtyp=signin|lang=en|gm=ffl|pos=pencil_top|;dcopt=ist;sz=924x50tile=2;ord=9685088\"
+        width=\"924\" height=\"50\" border=\"0\" alt=\"\"></a></noscript>\n<!-- End
+        ad tag -->\n\n</div><div class=\"nav-main-breadcrumbs-row\" style=\"height:
+        28px;\">\n<div class=\"nav-main-breadcrumbs\">\n<a href=\"http://espn.go.com\">ESPN</a>
+        &raquo; <a href=\"http://games.espn.go.com/ffl/frontpage\">Free Fantasy Football</a>
+        &raquo; Sign In</div>\n<div class=\"clear\"></div></div>\n<div class=\"gamesmain
+        container\">\n<div class=\"games-innercol\">\n<div class=\"games-innercol2\">\n<div
+        class=\"games-fullcol games-fullcol-extramargin\"><div class=\"games-pageheader\"><div
+        style=\"float:left;\"></div><div style=\"float:left;\"><h1>Sign In</h1></div><div
+        class=\"clear\"></div></div>\n\n<table width=100% border=0 cellpadding=2 cellspacing=2>\n<tr><td
+        class=\"tableBody\">\nPlease sign in to your ESPN Fantasy Games account, or
+        <a tref=\"/members/v5_0/register\" href=\"\" data-regformid=\"espn_ffl\" data-language=\"en\"
+        data-affiliatename=\"espn_fantgames\" class=\"cbOverlay\" id=\"registerLink\">click
+        here</a> to register for a FREE account.\n<p></p>\n\n\n\n<form name=\"loginForm\"
+        method=\"post\" action=\"https://r.espn.go.com/espn/memberservices/pc/login\">\n<input
+        type=\"hidden\" name=\"failedAttempts\" value=\"2\">\n<input type=\"hidden\"
+        name=\"SUBMIT\" value=\"1\">\n<input type=\"hidden\" name=\"failedLocation\"
+        value=\"http://games.espn.go.com/ffl/signin?redir=http%3A%2F%2Fgames.espn.go.com%2Fffl%2Fclubhouse%3FteamId%3D1%26leagueId%3D1193126%26seasonId%3D2012&e=1\">\n<input
+        type=\"hidden\" name=\"aff_code\" value=\"espn_fantgames\">\n<input type=\"hidden\"
+        name=\"appRedirect\" value=\"http://games.espn.go.com/ffl/clubhouse?teamId=1&leagueId=1193126&seasonId=2012\">\n<input
+        type=\"hidden\" name=\"cookieDomain\" value=\".go.com\">\n<input type=\"hidden\"
+        name=\"multipleDomains\" value=\"true\">\n<NOSCRIPT><input type=hidden name=noscript
+        value=true></NOSCRIPT>\n<table width=100% border=0 cellpadding=0 cellspacing=0
+        class=\"bodyCopy\"><tr>\n<td width=15%><b>MEMBER NAME:</b></td>\n<td width=1%>&nbsp;&nbsp;</td>\n<td><input
+        name=\"username\" size=\"16\" maxlength=\"64\" value=\"\" class=\"select\"></td>\n</tr>\n<tr>\n<td><b>PASSWORD:</b></td>\n<td>&nbsp;&nbsp;</td>\n<td><input
+        type=\"password\" name=\"password\" size=\"16\" maxlength=\"25\" value=\"\"
+        class=\"select\"></td>\n</tr>\n<tr>\n<td colspan=2>&nbsp;</td>\n<td><input
+        type=\"submit\" name=\"submit\" value=\"Sign In\" class=\"select\"></td>\n</tr>\n</form>\n</table>\n\n\t<br><div><a
+        class=\"cbOverlay\" href=\"\" tref=\"/members/v3_1/fbConnect\" data-regformid=\"espn\"
+        data-language=\"en\" data-affiliatename=\"espn\"><span id=\"fb-login\" class=\"fb_button
+        fb_button_medium\"><span id=\"fb_login_text\" class=\"fb_button_text\">Sign
+        In with Facebook</span></span></a></div><br>\nDid you forget your Member Name
+        or Password? <a href=\"https://r.espn.go.com/members/forgotMembernamePassword\"
+        target=\"_blank\">Click here</a> to retrieve it.<br>\nOr call 1-888-549-ESPN
+        for help on all things Fantasy<br>\n\n\t</td></tr>\n\t</table>\n\n<script
+        type=\"text/javascript\">\nif( document.loginForm != null) {if( document.loginForm.username.value
+        == \"\" ) { document.loginForm.username.focus();document.loginForm.password.focus();document.loginForm.username.focus();
+        } else { document.loginForm.password.focus(); }}\n</script>\n\n<div class=\"games-footercol\">\n<script
+        type=\"text/javascript\">\nfunction showHideFAQs() {\n\tif (jQuery('#faq_qlinks').is(':visible'))
+        {\t\n\t\tjQuery('#faq_qlinks').hide();\n\t\tjQuery(\"#faqft_moreless_btn\").html(\"Expand
+        Help Topics +\");\n\t} else { \n\t\tjQuery('#faq_qlinks').show(); \n\t\tjQuery(\"#faqft_moreless_btn\").html(\"Collapse
+        Help Topics -\");\n\t}\n}\n</script><div style=\"margin:25px 0px 0px 0px;\"><script
+        type=\"text/javascript\">adsonar_placementId=1508426;adsonar_pid=2187771;adsonar_ps=-1;adsonar_zw=956;adsonar_zh=150;adsonar_jv='ads.espn.adsonar.com';</script><script
+        language=\"JavaScript\" src=\"http://js.adsonar.com/js/adsonar.js\"></script></div></div></div>\n<br><br>\n</div>\n</div>\n</div>\n<!--
+        ////////// start: Transitional Footer ////////// -->\n<!--start transitional
+        elements wrapper -->\n<div class=\"transitional-elements\">\n<!--[if IE 6]><div
+        class=\"ie6\"><![endif]-->\n<!--[if IE 7]><div class=\"ie7\"><![endif]-->\n<!--[if
+        IE 8]><div class=\"ie8\"><![endif]-->\n<div id=\"trans-footer\" class=\"container\">\n<p><strong><a
+        href=\"http://www.espn.com\">ESPN.com</a></strong>  |  <a href=\"https://r.espn.go.com/espn/memberServices\">Member
+        Services</a> | <a href=\"http://games.espn.go.com/frontpage\">Fantasy Games</a>
+        | <a href=\"http://games.espn.go.com/ffl/content?page=fflrulesindex2012\">Help</a>
+        | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <a href=\"http://games.espn.go.com/ffl/feedback\">Give
+        Us Your Feedback</a></p>\n\t\n<p>Call <strong>1-888-549-ESPN</strong> for
+        help on all things Fantasy</p>\n\n<p>Copyright &copy;2012 ESPN Internet Ventures.
+        <a href=\"http://disney.go.com/corporate/legal/terms.html\">Terms of Use</a>
+        and <a href=\"http://disney.go.com/corporate/privacy/pp_espn.html\">Privacy
+        Policy and Safety Information/Your California Privacy Rights</a> are applicable
+        to this site.<br><br>Officially Licensed Product of NFL PLAYERS. Visit <a
+        href=\"http://www.nflplayers.com\" target=\"new\">www.nflplayers.com</a>.</p>\n</div>\n<!--
+        end transitional elements wrapper -->\n<!--[if lte IE 8]></div><![endif]-->\n</div>\n<!--
+        ////////// end: Transitional Footer ////////// -->\n</div>\n<div id=\"nav-wrapper\"
+        class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<p><!--
+        begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!-- start:
+        Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a class=\"myespn\"
+        ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li class=\"sport-menu
+        default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a href=\"http://scores.espn.go.com/nfl/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!-- start:
+        Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://scores.espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAA
+        FB</a></li>\n<!-- start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default
+        t-ncb\" data-sportid=\"41\" id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAA BB</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espn.go.com/sports/soccer/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandplaybook\" target=\"_blank\">espnW<span>&amp;
+        PLAYBOOK</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy selected\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav --></div>\n<div class=\"nav-main-secondary\">\n<ul>\n<div class=\"nav-main-secondary\"><ul><div
+        class=\"nav-main-secondary\">\n<ul>\n<li class=\"subnav-frontpage\"><a href=\"http://games.espn.go.com/frontpage/football\">Fantasy
+        Football</a></li>\n<!--<li class=\"subnav-create\"><a href=\"http://games.espn.go.com/ffl/welcome\">Create
+        or Join a League</a></li>\n<li class=\"subnav-draftkit\"><a href=\"http://games.espn.go.com/frontpage/ffldraftkit\">Draft
+        Kit</a></li>-->\n<li class=\"subnav-tools-projections-sortable\"><a href=\"http://games.espn.go.com/ffl/tools/projections?\">Projections</a></li>\n<li><a
+        href=\"http://games.espn.go.com/frontpage/fantasyRankings\">Weekly Rankings</a></li>\n<li
+        class=\"subnav-addeddropped\"><a href=\"http://games.espn.go.com/ffl/addeddropped\">Added/Dropped</a></li>\n<li
+        class=\"subnav-resources-playernews\"><a href=\"http://games.espn.go.com/ffl/resources/playernews\">Player
+        News</a></li>\n<li class=\"subnav-scoring\"><a href=\"http://games.espn.go.com/ffl/leaders\">Scoring
+        Leaders</a></li>\n<li class=\"subnav-corrections\"><a href=\"http://games.espn.go.com/ffl/tools/statcorrections\">Stat
+        Corrections</a></li>\n<li class=\"subnav-rules\"><a href=\"http://games.espn.go.com/ffl/content?page=fflrulesindex2012\">Rules</a></li>
+        \n<li class=\"subnav-forum\"><a href=\"http://games.espn.go.com/frontpage/forums#!/category/1313609200-908-35\">Forums</a></li>\n<li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>More</span></a>
+        \  \n<div>\n<dl style=\"border:none;\">\n<dd><a href=\"http://itunes.apple.com/us/app/espn-fantasy-football-2012/id389073226?mt=8\">Fantasy
+        Football iTunes app</a></dd>\n<dd><a href=\"https://play.google.com/store/apps/details?id=com.espn.espnfantasyfootball&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5lc3BuLmVzcG5mYW50YXN5Zm9vdGJhbGwiXQ\">Fantasy
+        Football Android app</a></dd>\n<dd><a href=\"http://itunes.apple.com/us/app/espn-fantasy-football-2012/id555376968?ls=1&mt=8\">Fantasy
+        Football iPad app</a></dd>\n<dd><a href=\"http://games.espn.go.com/ffl/livedraftresults\">Average
+        Draft Position</a></dd>\n<dd><a href=\"http://games.espn.go.com/frontpage/ffldraftkit\">Draft
+        Kit</a></dd>\n<dd><a href=\"http://games.espn.go.com/ffl/livedraftlobby\">Live
+        Draft Lobby</a></dd>\n<dd><a href=\"http://games.espn.go.com/ffl/resources/leaderboard?leaderboardGroupId=0\">Leaderboards</a></dd>\n\n<dd><a
+        href=\"http://games.espn.go.com/ffl/tools/undroppables\">Undroppables</a></dd>\n<!--<dd><a
+        href=\"http://games.espn.go.com/ffl/leaders\">Scoring Leaders</a></dd>-->\n<dd><a
+        href=\"http://games.espn.go.com/ffl/pointsagainst\">Points Against</a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/insider/fantasy/football/valuecalculator\">Custom
+        Dollar Value Generator<img width=\"8\" height=\"9\" style=\"margin-left:3px;\"
+        alt=\"Insider\" src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n<dd><a
+        href=\"http://games.espn.go.com/ffl/content?page=fflrulesfaq2012\">FAQ</a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/fantasy/football/ffl/story?page=goallinegrid\">Goal-Line
+        Grid <img width=\"8\" height=\"9\" style=\"margin-left:3px;\" alt=\"Insider\"
+        src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/insider/fantasy/answerguys/index\">Answer
+        Guys <img width=\"8\" height=\"9\" style=\"margin-left:3px;\" alt=\"Insider\"
+        src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n</dl>
+        \ \n</div> \n</li> \n</ul>\n</div>\n</ul></div></ul>\n</div>\n<script>espn.core.init.nav();</script>\n</div>\n</div>\n</div>\n</div>\n</div>\n</td></tr></table>\n</div>\n\n\n\n<!--
+        SiteCatalyst code version: H.21.3 Copyright 1997-2010 Omniture, Inc. http://www.omniture.com
+        -->\n<script type=\"text/javascript\">\n\tvar s_account=\"wdgespfantasy\";\n\tvar
+        omniPageName = \"fantasy:football:ffl:signin\";\n\t\n\tvar insiderStatus =
+        \"\",\n\tanGen = \"\",\n\tanYear = \"\",\n\tanDateString = \"\",\n\tanLoginStatus
+        = \"\",\n\tundef = 'undefined',\n\tcallOmniture = function(){\n\t\tif (typeof
+        anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"football:ffl:signin\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"football\";\n\t\ts_omni.prop1
+        = \"fantasy\";\n\t\ts_omni.prop4 = \"game-lm-gen\";\n\t\ts_omni.prop5 = \"football:ffl\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"football\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30 = \"n\";\n\t\ts_omni.hier1
+        = \"football:ffl:signin\";\n\t\ts_omni.eVar7 = anYear + \":\" + anGen + \":\"
+        + anLoginStatus + \":\" + s_omni.prop11 + \":\";\n\t\ts_omni.eVar9 = \"en\";\n\t\ts_omni.eVar13
+        = \"football:ffl:signin\";\n\t\ts_omni.eVar19 = \"football\";\n\t\t\n\t\tif
+        (s_omni.prop11==\"anonymous:premium-yes\" || s_omni.prop11==\"insider-no:premium-yes\"
+        && typeof s_omni.prop4!=\"undefined\" &&\n\t\t\t(s_omni.prop4==\"story\" ||
+        s_omni.prop4==\"blog\")) {\n\t\t\tif (typeof s_omni.events != \"undefined\"
+        && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events = s_omni.events+\",event8\"
+        }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\tanDebugCase = \"ver_15Feb11_0_\";\n\t\t/*************
+        DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/\n\t\tvar s_code=s_omni.t();\n\t\tif(s_code)
+        {\n\t\t\t//document.write(s_code);\n\t\t\tjQuery('body').append(s_code);\n\t\t}\n\t};\n\t\n\n\n\tjQuery(function($)
+        {\n\t\t// we want to load the analytics files from the cache if possible -
+        so, let's use full $.ajax() calls\n\t\t$.ajax({\n\t\t\ttype:'GET',\n\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/zf.js,analytics/externalnielsen.js',\n\t\t\tdataType:
+        'script',\n\t\t\tcache: true,\n\t\t\tsuccess: function() {\n\t\t\t\tvar lgSrc;\n\t\t\t\tif(typeof
+        anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\tlgSrc = ('https:' === document.location.protocol) ?
+        'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently'
+        : 'http://sports.espn.go.com/espn/js/uniloginInLineReplace?cb=runOmnitureIndependently';\n\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t}
+        else {\n\t\t\t\t\tcallOmniture();\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t});\n\n</script>\n<!--
+        End SiteCatalyst code version: H.21. --></body>\n</html>\n"
+    http_version: 
+  recorded_at: Sun, 16 Sep 2012 23:08:29 GMT
 recorded_with: VCR 2.2.4
