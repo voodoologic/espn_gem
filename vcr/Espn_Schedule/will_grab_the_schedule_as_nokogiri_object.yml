@@ -1,0 +1,630 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://games.espn.go.com/ffl/standings?leagueId=1166249&seasonId=2012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate, proxy-revalidate, maxage=0
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '53186'
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Server:
+      - barista/3.3.6
+      Set-Cookie:
+      - FFL_LM_COOKIE=AAAAARoAAAAEAQAIc2Vhc29uSWQDAAAH3AEACGxlYWd1ZUlkAwARy6kBAAtjb3VudHJ5Q29kZQEAA3VzYQEAD2NsaWVudElQQWRkcmVzcwEADTE5OC4xNS45Ni4xOTQ;
+        expires=Tue, 15-Oct-2080 09:02:23 GMT; path=/ffl; domain=games.espn.go.com;
+      X-Frame-Options:
+      - SAMEORIGIN
+      P3p:
+      - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRoBUS
+        PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>\n<head>\n<title>Betches
+        Luv Fantasy Football Standings - Free Fantasy Football -  ESPN</title>\n<!--
+        N7ESPNAPP241.mgmt.prod:2795 -->\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<meta
+        http-equiv=\"Content-Script-Type\" content=\"text/javascript\">\n<meta http-equiv=\"Pragma\"
+        content=\"no-cache\">\n<meta http-equiv=\"Cache-Control\" content=\"no-cache,
+        must-revalidate, proxy-revalidate, maxage=0\">\n<meta http-equiv=\"Expires\"
+        content=\"-1\">\n\n\n\t\t<script type=\"text/javascript\">\n\t\t/* omniture
+        ad tracking v0.1 24Jun08 */\n\t\tvar anAds;\n\t\tanAds=\"\";\n\t\tfunction
+        anPassAds(str) {\n\t\t\tanAds=anAds?anAds+\",ads;\"+str+\";;;event38=1\":\"ads;\"+str+\";;;event38=1\";\n\t\t}\n\t\t</script>\n<link
+        rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c?css=fantasy_reset.r1.css,base.r234.css,modules.r422.css,global_header.r38.css,modules/global_nav.r52.css,modules/insider_enhanced.200910131831.css,registration/facebook.button.v2.css,registration/v3_1.facebook.v2.css,modules/browser-alert.r7.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\">\n<link rel=\"stylesheet\"
+        href=\"http://a.espncdn.com/combiner/c?css=espn.teams.r3.css\" type=\"text/css\"
+        media=\"screen\" charset=\"utf-8\">\n<style type=\"text/css\">\n#content{width:990px
+        !important;}\n#header{width:990px !important;}\n#nav-wrapper-container{width:990px
+        !important;}\n#nav-main ul.top li .wrapper{width:984px !important;}\n#content.container
+        { padding: 0; }\n</style>\n<style type=\"text/css\">\n</style>\n\r\n<link
+        rel=\"stylesheet\" type=\"text/css\" href=\"http://g.espncdn.com/ffl/static/css/main?v=2488814192711\">\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/jquery/1.7.1/jquery.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/jqueryui/1.8.16/jquery-ui.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/swfobject/2.2/swfobject.js\"></script>\n<script
+        type=\"text/javascript\" charset=\"iso-8859-1\" src=\"http://a.espncdn.com/combiner/c/?js=plugins/json2.r3.js,plugins/teacrypt.js,plugins/jquery.metadata.js,plugins/jquery.bgiframe.r3.js,plugins/jquery.easing.1.3.js,plugins/jquery.hoverIntent.js,plugins/jquery.jcarousel.js,plugins/jquery.tinysort.r4.js,plugins/jquery.pubsub.r5.js,plugins/ba-debug-0.4.js,espn.l10n.r12.js,flashObjWrapper.r7.js,espn.core.duo.r54.js,stub.search.r9.js,espn.nav.mega.r33.js,espn.storage.r6.js,espn.p13n.r15.js,espn.video.r67.js,registration/staticLogin.r10-28.js,registration/espn.overlay.stub.r3-18.js,espn.insider.r5.js,espn.espn360.stub.r9.js,espn.myHeadlines.stub.r13.js,espn.gallery.0628.js\"></script>\n<script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/libs/prototype/1.6.0.2/prototype.js\"></script>\n<script
+        type=\"text/javascript\">\n\ncom = { espn: {\n\tenv: {\n\t\tav: navigator.appVersion,\n\t\tua:
+        navigator.userAgent,\n\t\tan: navigator.appName,\n\t\tplatform: navigator.platform,\n\t\tIE:
+        \"Microsoft Internet Explorer\",\n\t\tNS: \"Netscape\",\n\t\tMAC: \"MacPPC\",\n\n\t\thost:
+        \"games.espn.go.com\",\n\t\tcontext: \"standings\"\n\t},\n\tlisteners: {},\n\tgames:
+        {\n\t\tgameRoot: \"ffl\",\n\t\tleagueId: 1166249,\n\t\tseasonId: 2012,\n\t\ttoTeamId:
+        -2147483648,\n\t\tfromTeamId: -2147483648,\n\t\tscoringPeriodId: 4,\n\t\tcurrentScoringPeriodId:
+        4,\n\t\tleagueType: 10\n\t}\n}};\n\ncom.espn.games.isLeagueManager = false;com.espn.games.isLeagueCreator
+        = false;com.espn.games.isLeagueMember = false;com.espn.games.userLoggedIn
+        = false;var GAMEROOT = \"ffl\";var host = \"games.espn.go.com\";var gameRoot
+        = \"ffl\";var leagueId = 1166249;var teamId = -2147483648;</script><script
+        type=\"text/javascript\" src=\"http://g.espncdn.com/ffl/static/js/libraries?v=314524\"></script>\n<script
+        type=\"text/javascript\">\n\n\nSortable = Class.create();\n\nSortable.SORT_ORDER_DESC
+        = 'd';\nSortable.SORT_ORDER_ASC = 'a';\nSortable.CURRENT_SORTS = new Object();\nSortable.prototype
+        = {\n\n\ttrigger: null,\n\ttable: null,\n\tsortBys: null,\n\tsortOrders: null,\n\tsortableTable:
+        null,\n\t\n\tsortableIndex: null,\n\treverse: false,\n\t\n\thighlightRows:
+        true,\n\n\tinitialize: function(props) {\n\t\t\n\t\t/* isReversed AND sortReplication
+        ARE ONLY USED FOR REPRODUCING THE CURRENT SORT DYNAMICALLY */\n\t\t\n\t\tvar
+        _this = this;\n\t\t\n\t\tif (props && props.table && $(props.table)) {\n\t\t\n\t\t\tthis.trigger
+        = (props.trigger) ? $(props.trigger) : null;\n\t\t\tthis.table = $(props.table);\n\t\t\tthis.sortBys
+        = (props.sortBys) ? props.sortBys : [];\n\t\t\tthis.sortOrders = (props.sortOrders)
+        ? props.sortOrders : [];\n\t\t\tthis.sortableIndex = (props.sortableIndex)
+        ? props.sortableIndex.current : new Sortable.Index().current;\n\t\t\tthis.highlightRows
+        = (props.highlightRows != null) ? props.highlightRows : true;\n\t\t\t\n\t\t\tthis.reverse
+        = (props.allowReverse != false && this.trigger && this.trigger.sortableIndex
+        && this.trigger.sortableIndex == this.sortableIndex)\n\n\t\t\t// GET TABLES\n\t\t\tthis.sortableTable
+        = new Sortable.Table(this, this.table, props.dupedSortResults);\n\n\t\t\t//
+        FOR DYNAMICALLY RECONSTRUCTING A SORT\n\t\t\tvar sortReplication;\n\t\t\tif
+        (props.batchReplication) {\n\t\t\t\tsortReplication = function() { var incRevSorted
+        = _this.table.revSorted; props.batchReplication(false); if (incRevSorted ==
+        true) {  props.batchReplication(); } };\n\t\t\t} else {\n\t\t\t\tsortReplication
+        = function() { var incRevSorted = _this.table.revSorted; new Sortable(props.extend({
+        allowReverse: false })); if (incRevSorted == true) {  new Sortable(props);
+        } };\n\t\t\t}\n\n\t\t\tthis.table.revSorted = (props.dupedRevSorted) ? props.dupedRevSorted
+        : (!this.reverse || this.table.revSorted != false) ? false : true;\n\n\t\t\tif
+        (this.trigger) {\n\t\t\t\tthis.trigger.sortableIndex = (!props.sortableIndex)
+        ? new Sortable.Index().increment().current : props.sortableIndex.next;\n\t\t\t}\n\n\n\t\t\t//
+        SAVE CURRENT SORT FOR RE-APPLICATION\t\t\t\n\t\t\tSortable.CURRENT_SORTS[this.table]
+        = sortReplication;\n\n\t\t}\n\t}\n\n}\n\nSortable.Batch = Class.create();\n\nSortable.Batch.prototype
+        = {\n\n\tsortables: null,\n\tduplicateSortResults: false,\n\n\tinitialize:
+        function(sortableProps, duplicateSortResults, allowReverse) {\n\t\n\t\t//
+        allowReverse IS USED FOR REPLICATING A SORT DYNAMICALLY\n\t\n\t\tvar trigger;\n\t\tvar
+        table;\n\t\tvar sortBys;\n\t\tvar sortOrders;\n\t\tvar sortableIndex = new
+        Sortable.Index();\n\t\tvar dupedRevSorted = undefined;\n\n\t\tthis.duplicateSortResults
+        = (duplicateSortResults) ? duplicateSortResults : false;\n\t\tvar dupedSortResults
+        = null;\n\n\t\t// FOR DYNAMICALLY RECONSTRUCTING A SORT BATCH\n\t\tvar batchReplication
+        = function(allowReverse) { new Sortable.Batch(sortableProps, duplicateSortResults,
+        allowReverse) };\n\n\t\tif (sortableProps) {\n\n\t\t\tthis.sortables = new
+        Array(sortableProps.length);\n\n\t\t\tfor (var p = 0; p < sortableProps.length;
+        p++) {\n\t\t\t\ttrigger = (sortableProps[p].trigger) ?  sortableProps[p].trigger
+        : null;\n\t\t\t\ttable = (sortableProps[p].table) ?  sortableProps[p].table
+        : null;\n\t\t\t\tsortBys = (sortableProps[p].sortBys) ?  sortableProps[p].sortBys
+        : null;\n\t\t\t\tsortOrders = (sortableProps[p].sortOrders) ?  sortableProps[p].sortOrders
+        : null;\n\n\t\t\t\tif (p > 0 && this.duplicateSortResults && dupedSortResults
+        == null) {\n\t\t\t\t\tdupedSortResults = this.sortables[0].sortableTable.sortedRows;\n\t\t\t\t\tif
+        (table) dupedRevSorted = this.sortables[0].table.revSorted;\n\t\t\t\t}\n\t\t\t\tthis.sortables[p]
+        = new Sortable({trigger: trigger,\n\t\t\t\t\t\t\t\t\ttable: table,\n\t\t\t\t\t\t\t\t\tsortBys:
+        sortBys,\n\t\t\t\t\t\t\t\t\tsortOrders: sortOrders,\n\t\t\t\t\t\t\t\t\tdupedSortResults:
+        dupedSortResults,\n\t\t\t\t\t\t\t\t\tsortableIndex: sortableIndex,\n\t\t\t\t\t\t\t\t\tbatchReplication:
+        batchReplication,\n\t\t\t\t\t\t\t\t\tallowReverse: allowReverse,\n\t\t\t\t\t\t\t\t\tdupedRevSorted:
+        dupedRevSorted });\t\t\t\n\t\t\t}\n\t\t}\n\t\t\n\t\tsortableIndex.increment();\n\n\t}\n\n\n}\n\n\nSortable.Table
+        = Class.create();\n\nSortable.Table.prototype = {\n\n\tsortable: null,\n\ttable:
+        null,\n\tsortableRows: null,\n\tsortedRows: null,\n\tsortByCellIndices: null,\n\tminRowIndex:
+        0,\n\n\tinitialize: function(sortable, table, dupedSortResults) {\n\t\tthis.sortable
+        = sortable;\n\t\tthis.table = $(table);\n\t\tthis.sortableRows = [];\n\n\t\t//
+        NOTE: IN ORDER FOR dupedSortResults TO WORK, TABLES MUST BE NEARLY IDENTICAL
+        IN STRUCTURE\n\t\tthis.sortedRows = (dupedSortResults) ? dupedSortResults
+        : [];\n\n\t\tthis.sortByCellIndices = new Array(this.sortable.sortBys.length);\n\n\t\tif
+        (this.table) {\n\t\t\tthis.sortTable();\n\t\t}\n\n\t},\n\n\tsortTable: function()
+        {\n\t\tvar _this = this;\n\t\t\n\t\tvar rowIndex = 0\n\t\tvar foundFirstRow
+        = false;\n\t\t$A(this.table.rows).each(function(row) {\n\t\t\tif (Element.hasClassName(row,
+        'sortableRow')) {\n\t\t\t\tif (!foundFirstRow) {\n\t\t\t\t\t_this.minRowIndex
+        = rowIndex;\n\t\t\t\t\tfoundFirstRow = true;\n\t\t\t\t}\n\t\t\t\t_this.sortableRows.push(new
+        Sortable.Row(_this, row, rowIndex));\n\t\t\t}\n\t\t\trowIndex++;\n\t\t});\n\t\t\t\t\n\t\tif
+        (!this.sortable.reverse) {\n\t\t\tif (this.sortedRows.length == 0) {\n\t\t\t\tthis.sortedRows
+        = this.sortableRows.slice(0);\n\t\t\t\tthis.sortedRows.sort(function(a, b)
+        { return b.compare(a); });\n\t\t\t}\n\t\t} else {\n\t\t\tthis.sortedRows =
+        $A(this.sortableRows).reverse(false);\n\t\t}\n\n\t\tvar y;\n\t\tvar thisCell;\n\t\tvar
+        rowToMove;\n\t\tvar rowColorClass;\n\t\tvar rowColorClassToRemove;\n\t\tfor
+        (var m = 0; m < this.sortedRows.length; m++) {\n\t\t\trowToMove = this.sortableRows[this.sortedRows[m].rowIndex
+        - this.minRowIndex].row;\n\t\t\trowToMove.parentNode.insertBefore(rowToMove,
+        null)\n\n\t\t\trowColorClass = (m%2 == 0) ? 'evenRow' : 'oddRow';\n\t\t\trowColorClassToRemove
+        = (m%2 == 0) ? 'oddRow' : 'evenRow';\n\n\t\t\tif (!Element.hasClassName(rowToMove,
+        rowColorClass)) {\n\t\t\t\tElement.removeClassName(rowToMove, rowColorClassToRemove);\n\t\t\t\tElement.addClassName(rowToMove,
+        rowColorClass)\n\t\t\t}\n\n\t\t\tif (this.sortable.highlightRows) {\n\t\t\t\tfor
+        (y = 0; y < rowToMove.cells.length; y++) {\n\t\t\t\t\tthisCell = rowToMove.cells[y];\n\n\t\t\t\t\tthisCell.className
+        = thisCell.className.replace('sortableSorted', '');\n\t\t\t\t\tif (Element.hasClassName(thisCell,
+        'sortable' + this.sortable.sortBys[0])) {\n\t\t\t\t\t\tElement.addClassName(thisCell,
+        'sortableSorted');\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t}\n\n\t}\n\n\n}\n\nSortable.Row
+        = Class.create();\n\nSortable.Row.COMPARE_RESULT_GREATER_THAN = 1;\nSortable.Row.COMPARE_RESULT_LESS_THAN
+        = -1;\nSortable.Row.COMPARE_RESULT_EQUAL = 0;\n\nSortable.Row.prototype =
+        {\n\n\tsortable: null,\n\tsortableTable: null,\n\trow: null,\n\trowIndex:
+        null,\n\tclonedRow: null,\n\tsortValues: null,\n\n\tinitialize: function(sortableTable,
+        row, rowIndex) {\n\t\tthis.sortableTable = sortableTable;\n\t\tthis.row =
+        row;\n\t\tthis.rowIndex = rowIndex;\n\t\tthis.sortValues = new Array(this.sortableTable.sortable.sortBys.length);\n\n\t},\n\n\tgetSortValue:
+        function(sortBy, sortByIndex) {\n\n\t\tif (!this.sortValues[sortByIndex] ||
+        this.sortValues[sortByIndex] == undefined) {\n\t\t\tif (this.sortableTable.sortByCellIndices[sortByIndex]
+        && this.sortableTable.sortByCellIndices[sortByIndex] != undefined) {\n\t\t\t\tvar
+        cellInnerHTML = this.row.cells[this.sortableTable.sortByCellIndices[sortByIndex]].innerHTML;\n\t\t\t\tif
+        (!isNaN(cellInnerHTML)) {\n\t\t\t\t\tthis.sortValues[sortByIndex] = Number(cellInnerHTML);\n\t\t\t\t}
+        else {\n\t\t\t\t\tthis.sortValues[sortByIndex] = cellInnerHTML;\n\t\t\t\t}\n\t\t\t}
+        else {\n\n\t\t\t\tvar i;\n\t\t\t\tvar sortBys = this.sortableTable.sortable.sortBys;\n\t\t\t\tvar
+        cellInnerHTML;\n\t\t\t\tvar cell;\n\t\t\t\tfor (var n = 0; n < this.row.cells.length;
+        n++) {\n\t\t\t\t\tcell = this.row.cells[n];\n\n\t\t\t\t\tif (cell.className
+        != '') {\n\t\t\t\t\t\tcellInnerHTML = cell.innerHTML;\n\t\t\t\t\t\tfor(i =
+        0; i< sortBys.length; i++) {\n\t\t\t\t\t\t\tif (Element.hasClassName(cell,
+        'sortable' + sortBys[i])) {\n\t\t\t\t\t\t\t\tthis.sortableTable.sortByCellIndices[i]
+        = n;\n\t\t\t\t\t\t\t\tif (!isNaN(cellInnerHTML)) {\n\t\t\t\t\t\t\t\t\tthis.sortValues[i]
+        = Number(cellInnerHTML);\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tthis.sortValues[i]
+        = cellInnerHTML;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\tif (i == sortByIndex)
+        { break; };\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\tif (this.sortValues[i]
+        && this.sortValues[i] != undefined) {\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t}\n\t\t}\n\t\treturn
+        this.sortValues[sortByIndex];\n\t},\n\n\tcompare: function(rowToCompare) {\n\t\tvar
+        sortOrders = this.sortableTable.sortable.sortOrders;\n\t\tvar sortBys = this.sortableTable.sortable.sortBys\n\t\tvar
+        result = Sortable.Row.COMPARE_RESULT_EQUAL;\n\t\tvar q = 0;\n\t\tvar thisSortBy;\n\t\tfor
+        (var q=0; q < sortBys.length; q++) {\n\t\t\tthisSortBy = sortBys[q];\n\n\t\t\tthisSortValue
+        = this.getSortValue(thisSortBy, q);\n\t\t\tsortValueToCompare = rowToCompare.getSortValue(thisSortBy,
+        q);\n\n\t\t\tif (thisSortValue > sortValueToCompare) {\n\t\t\t\tif (sortOrders[q]
+        == Sortable.SORT_ORDER_DESC) {\n\t\t\t\t\tresult = Sortable.Row.COMPARE_RESULT_GREATER_THAN;\n\t\t\t\t}
+        else {\n\t\t\t\t\tresult = Sortable.Row.COMPARE_RESULT_LESS_THAN;\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\t}
+        else if (thisSortValue < sortValueToCompare) {\n\t\t\t\tif (sortOrders[q]
+        == Sortable.SORT_ORDER_DESC) {\n\t\t\t\t\tresult = Sortable.Row.COMPARE_RESULT_LESS_THAN;\n\t\t\t\t}
+        else {\n\t\t\t\t\tresult = Sortable.Row.COMPARE_RESULT_GREATER_THAN;\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\treturn
+        result;\n\t}\n\n}\n\nSortable.Index = Class.create();\nSortable.Index.CurrentIndex
+        = 0;\nSortable.Index.prototype = {\n\t\n\tcurrent: null,\n\tnext: null,\n\t\n\tinitialize:
+        function() {\n\t\tthis.getCurrentIndex();\n\t\tthis.next = this.current +
+        1;\n\t},\n\t\n\tincrement: function() {\n\t\tSortable.Index.CurrentIndex++;\n\t\tthis.getCurrentIndex();\n\t\treturn
+        this;\n\t},\n\t\n\tgetCurrentIndex: function() {\n\t\tthis.current = Sortable.Index.CurrentIndex;\n\t}\n}\n</script>\n<script
+        type=\"text/javascript\"></script>\n</head><body class=\"trans-fantasy context-standings
+        games-ad-none\">\n<!--[if IE 6]><div class=\"ie ie6\"><![endif]-->\n<!--[if
+        IE 7]><div class=\"ie ie7\"><![endif]-->\n<!--[if IE 8]><div class=\"ie ie8\"><![endif]-->\n<div
+        class=\"bg-elements\">\n<table class=\"maincontainertbl\" cellpadding=\"0\"
+        cellspacing=\"0\"><tr><td class=\"maincontainertblcell\" valign=\"top\" id=\"maincontainertblcell\"><div
+        id=\"header\" class=\"container\">\n<!-- ////////// start: Transitional Header
+        ////////// --><div class=\"top-bar\">\n<!-- begin uni login -->\n<script type=\"text/javascript\">\nvar
+        returnURL = document.location.href;\nvar anCV = \"\";\nvar myEspnText = {'welcometext':'Welcome','register':'Register','signin':'Sign
+        In','signout':'Sign Out','heliumdown':'Login Temporarily Unavailable','activateinsider':'Activate
+        Insider'};\n</script>\n\n\n<form id=\"form-memberarea\">\n<input type=\"hidden\"
+        name=\"language\" id=\"language\" value=\"en\"/>\n<input type=\"hidden\" name=\"affiliateName\"
+        id=\"memberAreaAffiliateName\" value=\"espn_fantgames\"/>\n<input type=\"hidden\"
+        name=\"regFormId\" id=\"regFormId\" value=\"espn_ffl\"/>\n</form>\n<div class=\"signin\"
+        id=\"signin\"></div>\n<script>espn.memberservices.welcome();</script><div
+        class=\"nav-edition editions\">\n<label>EDITIONS:</label>\n<ul class=\"main\">\n\t<li
+        class=\"e-usa\"><a href=\"http://espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=usa\">USA</a></li>\n\t<li
+        class=\"e-deportes\"><a href=\"http://espndeportes.espn.go.com/\" name=\"&amp;lpos=editionsnav&amp;lid=deportes\">DEPORTES</a></li>\n\t<li
+        class=\"last dropdown\">\n\t<ul class=\"\">\n\t<li class=\"selected\">More</li>\n\t<li><a
+        href=\"http://www.espnstar.com/\" name=\"&amp;lpos=editionsnav&amp;lid=asia\">Asia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.au\" name=\"&amp;lpos=editionsnav&amp;lid=australia\">Australia</a></li>\n\t<li><a
+        href=\"http://www.espn.com.br\" name=\"&amp;lpos=editionsnav&amp;lid=brazil\">Brazil</a></li>\n\t<li><a
+        href=\"http://www.espn.co.uk/\" name=\"&amp;lpos=editionsnav&amp;lid=uk\">United
+        Kingdom</a></li>\n\t</ul>\n\t</li>\n</ul>\n</div>\n\n<div class=\"nav-edition\">\n<label>CITIES:</label>\n<ul
+        class=\"main\">\n\t<li class=\"e-boston\"><a href=\"http://espn.go.com/boston/\"
+        name=\"&amp;lpos=citynav&amp;lid=boston\">BOSTON</a></li>\n\t<li class=\"e-chicago\"><a
+        href=\"http://espn.go.com/chicago/\" name=\"&amp;lpos=citynav&amp;lid=chicago\">CHICAGO</a></li>\n\t<li
+        class=\"e-dallas\"><a href=\"http://espn.go.com/dallas/\" name=\"&amp;lpos=citynav&amp;lid=dallas\">DALLAS</a></li>\n\t<li
+        class=\"e-losangeles\"><a href=\"http://espn.go.com/los-angeles/\" name=\"&amp;lpos=citynav&amp;lid=losangeles\">LOS
+        ANGELES</a></li>\n\t<li class=\"last e-newyork\"><a href=\"http://espn.go.com/new-york/\"
+        name=\"&amp;lpos=citynav&amp;lid=newyork\">NEW YORK</a></li>\n</ul>\n</div></div>\n<div
+        class=\"espn-logo\">\n<h1>\n<a href=\"http://espn.go.com\" class=\"espn\">ESPN</a>\n<img
+        src=\"http://g.espncdn.com/s/ffllm/12/images/shell/bgHead_espncustom.png\"
+        height=\"69\">\n</h1>\n</div>\n<div class=\"presby\">\n\n<!-- begin ad tag
+        (tile=1) -->\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar
+        adSegments = espn.core.ad_segments();\nvar pipedAdSegments = adSegments.replace(/;/g,
+        \"|\").substring(0,adSegments.length-1);\nvar adURI = \"espn.us.com.games/football\"
+        + \";pgn=BetchesLuvFantasyFootballStandings;pgtyp=standings;lang=en;gm=ffl;pos=SponsoredByLogoHeader;\"
+        + adSegments + \"u=pgn=BetchesLuvFantasyFootballStandings|pgtyp=standings|lang=en|gm=ffl|pos=SponsoredByLogoHeader|\"
+        + pipedAdSegments + \";dcopt=ist;sz=150x45;tile=1;ord=6893434\" + \"?\";\ndocument.write('<script
+        language=\"JavaScript\" src=\"http://ad.Doubleclick.net/adj/' + adURI + '\"
+        type=\"text/javascript\"><\\/script>');\n</script><noscript><a href=\"http://ad.doubleclick.net/jump/espn.us.com.games/football;pgn=BetchesLuvFantasyFootballStandings;pgtyp=standings;lang=en;gm=ffl;pos=SponsoredByLogoHeaderu=pgn=BetchesLuvFantasyFootballStandings|pgtyp=standings|lang=en|gm=ffl|pos=SponsoredByLogoHeader|;dcopt=ist;sz=150x45tile=1;ord=6893434\"
+        target=\"_blank\"><img src=\"http://ad.doubleclick.net/ad/espn.us.com.games/football;pgn=BetchesLuvFantasyFootballStandings;pgtyp=standings;lang=en;gm=ffl;pos=SponsoredByLogoHeaderu=pgn=BetchesLuvFantasyFootballStandings|pgtyp=standings|lang=en|gm=ffl|pos=SponsoredByLogoHeader|;dcopt=ist;sz=150x45tile=1;ord=6893434\"
+        width=\"150\" height=\"45\" border=\"0\" alt=\"\"></a></noscript>\n<!-- End
+        ad tag -->\n\n</div>\t  <div id=\"shop\">\n\t  \t<a class=\"shop-btn\" href=\"http://espnshop.com/entry.point?target=Z&amp;source=ESPN_HPHEADERLINK:SHOPBUTTONHEADER:6_1_10\"
+        name=\"&lpos=sitenavdefault&lid=sitenav_shopbutton\">Shop</a>\n\t  </div>\n\t
+        \ <div id=\"nav-main-search\">\n<form id=\"searchBox\" name=\"searchBox\"
+        action=\"http://search.espn.go.com/results\" method=\"get\" accept-charset=\"utf-8\"
+        class=\"clearfix\">\n<div class=\"clearfix\">\n<input autocomplete=\"off\"
+        class=\"text ui-autocomplete-input\" type=\"text\" placeholder=\"Search\"
+        name=\"searchString\" id=\"searchString\" role=\"textbox\" aria-autocomplete=\"list\"
+        aria-haspopup=\"true\"><input type=\"hidden\" name=\"page\" id=\"page\" value=\"null\">\n<input
+        type=\"hidden\" name=\"fromForm\" value=\"true\">\n<input class=\"submit\"
+        type=\"submit\" value=\"\">\n</div>\n</form>\n</div>\n</div>\n<div id=\"subheader\"><div
+        id=\"content-wrapper\">\n<div id=\"content\" class=\"container\">\n<div>\n\n<!--[if
+        lte IE 6]>\n<div class=\"span-6\" id=\"browser-alert-wrapper\" style=\"display:
+        none;\">\n\t<div class=\"mod-container mod-no-header-footer browser-alert\">\n\t\t<div
+        class=\"mod-content\">\n\t\t\t<div class=\"gradient-container\">\n\t\t\t\t<h1><span>Your
+        Web Browser</span> is no longer supported</h1>\n\t\t\t\t<p>To experience everything
+        that ESPN.com has to offer, we recommend that you upgrade to a newer version
+        of your web browser. Click the upgrade button to the right or <a href=\"http://espn.go.com/espn/news/story?id=5630562\">learn
+        more</a>.</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a class=\"btn-upgrade\" href=\"'+browserUrl+'\">Upgrade</a></li>\n\t\t\t\t\t<li><a
+        class=\"btn-faq\" href=\"http://espn.go.com/espn/news/story?id=5630562\">FAQs</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<script>\n\t(function($)
+        {\n\t\t  setTimeout(function () {\n\t\t\t\tvar $alertWrapper = $('#browser-alert-wrapper'),\n\t\t\t\t\t
+        \ browserAlertOptOut = espn.cookie.get('browseralert');\n\t\t\t\tif (browserAlertOptOut
+        != 'true') {\n\t\t\t\t\t  $(\"<a class=\\\"btn-close\\\" href=\\\"#\\\">Close</a>\").bind('click',
+        function (e) {\n\t\t\t\t\t\t\t$alertWrapper.hide();\n\t\t\t\t\t\t\tespn.cookie.set('browseralert','true',30);\n\t\t\t\t\t\t\treturn
+        false;\n\t\t\t\t\t  }).appendTo('.gradient-container',$alertWrapper);\n\t\t\t\t\t
+        \ $alertWrapper.show();\n\t\t\t\t\t  espn.cookie.set('browseralert','true');\n\t\t\t\t}\n\t\t
+        \ },100);\n\t})(jQuery);\n</script>\n<![endif]-->\n<div class=\"header-ad\">\n\n<!--
+        begin ad tag (tile=2) -->\n<script language=\"JavaScript\" type=\"text/javascript\">\nvar
+        adSegments = espn.core.ad_segments();\nvar pipedAdSegments = adSegments.replace(/;/g,
+        \"|\").substring(0,adSegments.length-1);\nvar adURI = \"espn.us.com.games/football\"
+        + \";pgn=leaders;pgtyp=standings;lang=en;gm=ffl;pos=pencil_top;\" + adSegments
+        + \"u=pgn=leaders|pgtyp=standings|lang=en|gm=ffl|pos=pencil_top|\" + pipedAdSegments
+        + \";dcopt=ist;sz=924x50;tile=2;ord=6893434\" + \"?\";\ndocument.write('<script
+        language=\"JavaScript\" src=\"http://ad.Doubleclick.net/adj/' + adURI + '\"
+        type=\"text/javascript\"><\\/script>');\n</script><noscript><a href=\"http://ad.doubleclick.net/jump/espn.us.com.games/football;pgn=leaders;pgtyp=standings;lang=en;gm=ffl;pos=pencil_topu=pgn=leaders|pgtyp=standings|lang=en|gm=ffl|pos=pencil_top|;dcopt=ist;sz=924x50tile=2;ord=6893434\"
+        target=\"_blank\"><img src=\"http://ad.doubleclick.net/ad/espn.us.com.games/football;pgn=leaders;pgtyp=standings;lang=en;gm=ffl;pos=pencil_topu=pgn=leaders|pgtyp=standings|lang=en|gm=ffl|pos=pencil_top|;dcopt=ist;sz=924x50tile=2;ord=6893434\"
+        width=\"924\" height=\"50\" border=\"0\" alt=\"\"></a></noscript>\n<!-- End
+        ad tag -->\n\n</div><div class=\"nav-main-breadcrumbs-row\" style=\"height:
+        28px;\">\n<div class=\"nav-main-breadcrumbs\">\n<a href=\"http://espn.go.com\">ESPN</a>
+        &raquo; <a href=\"http://games.espn.go.com/ffl/frontpage\">Free Fantasy Football</a>
+        &raquo; <a href=\"/ffl/leagueoffice?leagueId=1166249\">Betches Luv Fantasy
+        Football</a></div>\n<div class=\"playerSearchDiv\"><form class=\"playerSearchForm\"
+        name=\"playerSearch\" id=\"playerSearch\" action=\"/ffl/freeagency\" onsubmit=\"return
+        playerSuggester.submitSelectedPlayer();\" method=\"GET\"><div><input type=\"hidden\"
+        name=\"leagueId\" value=\"1166249\"><input type=\"hidden\" name=\"avail\"
+        value=\"-1\"><input type=\"hidden\" name=\"slotCategoryGroup\" value=\"-1\">Find
+        a Player: <input class=\"playerSearchNameInput\" type=\"text\" id=\"playerName\"
+        name=\"search\" onkeyup=\"playerSuggester.handleKeyUp(event, this.value);\"
+        value=\"Last Name\" style=\"color:#999;\" onfocus=\"playerSuggester.focus();\"
+        onblur=\"playerSuggester.blur();\"></div></form><div style=\"margin: 0px;\"><div
+        id=\"playerSuggestions\" style=\"display: none;\" onmouseover=\"playerSuggester.suggestDivOver();\"
+        onmouseout=\"playerSuggester.suggestDivOut();\"></div></div></div><script
+        type=\"text/javascript\">playerSearchObj=new Object();playerSearchObj.varName
+        = \"playerSuggester\";playerSearchObj.suggestDiv = \"playerSuggestions\";playerSearchObj.inputField
+        = \"playerName\";playerSearchObj.cssPrefix = \"\";playerSearchObj.statId =
+        null;playerSearchObj.chartSplitType = null;var playerSuggester = new PlayerSuggester(playerSearchObj);</script><div
+        class=\"comparePlayersLinkDiv\"><a id=\"comparePlayersLauncher\" href=\"\"
+        instance=\"_comparePlayers\" content=\"ajax#/ffl/playertable/prebuilt/compareplayers?leagueId=1166249&teamId=-2147483648&playerCompare=true\"
+        class=\"flexpop\" modal=\"true\" fpopStyle=\"modal\">Compare Players</a> (<span
+        id=\"comparePlayersCount\">0</span>)</div><div class=\"clear\"></div></div>\n<div
+        class=\"games-nav\"><ul id=\"games-tabs\"><li class=\" \"><a href=\"/ffl/leagueoffice?leagueId=1166249&seasonId=2012\">League</a></li><li
+        class=\" \"><a href=\"/ffl/freeagency?leagueId=1166249&seasonId=2012\">Players</a></li><li
+        class=\"games-on \"><a href=\"/ffl/standings?leagueId=1166249&seasonId=2012\">Standings</a></li><li
+        class=\" \"><a href=\"/ffl/scoreboard?leagueId=1166249&seasonId=2012\">Scoreboard</a></li><li
+        class=\" games-teams-btn\"><a href=\"#\">Teams</a><div class=\"clear\"></div><ul
+        id=\"games-tabs1\"><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=1&amp;seasonId=2012\">K
+        Cavs Baby AMIRITE <span class=\"alt-info\">(SCHL)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=2&amp;seasonId=2012\">LisaNowak4prez
+        Nowack2012 <span class=\"alt-info\">(PREZ)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=3&amp;seasonId=2012\">Nutpunch
+        Owmahgroin <span class=\"alt-info\">(OMG)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=4&amp;seasonId=2012\">Team
+        SW Dawgs <span class=\"alt-info\">(SW)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=5&amp;seasonId=2012\">Texas
+        Forever <span class=\"alt-info\">(RIGN)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=6&amp;seasonId=2012\">Appetite
+        for  DESTRUCTION <span class=\"alt-info\">(VAN )</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=7&amp;seasonId=2012\">Michael
+        Clarke Duncans <span class=\"alt-info\">(RIP)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=8&amp;seasonId=2012\">California
+        Bear Sharks <span class=\"alt-info\">(CHUL)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=9&amp;seasonId=2012\">Team
+        Goodfellas <span class=\"alt-info\">(Good)</span></a></li><li><a href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=10&amp;seasonId=2012\">Arkansas
+        \ BigSEXY <span class=\"alt-info\">(BSX)</span></a></li></ul></li></ul></div><div
+        class=\"gamesmain container\">\n<div class=\"games-innercol\">\n<div class=\"games-innercol2\">\n<div
+        class=\"games-nav subnav\"><ul id=\"games-subnav-links\"><li class=\"games-on\"><a
+        href=\"/ffl/standings?leagueId=1166249\">Season Standings</a></li><li class=\"\"><a
+        href=\"/ffl/h2hplayoffs?leagueId=1166249\">Projected Playoff Bracket</a></li></ul></div><div
+        class=\"games-fullcol games-fullcol-extramargin\"><div class=\"games-pageheader\"><div
+        style=\"float:left;\"></div><div style=\"float:left;\"><h1>Betches Luv Fantasy
+        Football Standings</h1></div><div class=\"clear\"></div></div><table width=\"100%\"
+        cellspacing=\"0\" cellpadding=\"0\"><tr>\r\n<td width=\"48%\" valign=\"top\">\r\n<table
+        width=\"100%\" border=\"0\" cellpadding=\"2\" cellspacing=\"1\" class=\"tableBody\"
+        bgcolor=\"#ffffff\" >\n<tr class=\"tableHead\" bgcolor=#1d7225><td colspan=\"6\">EAST</td></tr><tr
+        class=\"tableSubHead\" bgcolor=#6dbb75><td width=\"50%\">TEAM</td><td align=\"right\"
+        width=\"10%\">W</td><td align=\"right\" width=\"10%\">L</td><td align=\"right\"
+        width=\"10%\">T</td><td align=\"right\" width=\"10%\">PCT</td><td align=\"right\"
+        width=\"10%\">GB</td></tr><tr class=\"tableBody\" bgcolor=#f2f2e8><td><a title=\"K
+        Cavs Baby AMIRITE (Katie Schlesinger)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=1&amp;seasonId=2012\"
+        target=\"_top\">K Cavs Baby AMIRITE</a></td><td align=\"right\" >2</td><td
+        align=\"right\" >1</td><td align=\"right\"  >0</td><td align=\"right\" >.667</td><td
+        align=\"right\" >--</td></tr><tr class=\"tableBody\" bgcolor=#f8f8f2><td><a
+        title=\"Team SW Dawgs (Rodney Lemons)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=4&amp;seasonId=2012\"
+        target=\"_top\">Team SW Dawgs</a></td><td align=\"right\" >2</td><td align=\"right\"
+        >1</td><td align=\"right\"  >0</td><td align=\"right\" >.667</td><td align=\"right\"
+        >--</td></tr><tr class=\"tableBody\" bgcolor=#f2f2e8><td><a title=\"Texas
+        Forever (Lydia Carle)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=5&amp;seasonId=2012\"
+        target=\"_top\">Texas Forever</a></td><td align=\"right\" >1</td><td align=\"right\"
+        >2</td><td align=\"right\"  >0</td><td align=\"right\" >.333</td><td align=\"right\"
+        >1</td></tr><tr class=\"tableBody\" bgcolor=#f8f8f2><td><a title=\"LisaNowak4prez
+        Nowack2012 (Remi Moehring)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=2&amp;seasonId=2012\"
+        target=\"_top\">LisaNowak4prez Nowack2012</a></td><td align=\"right\" >1</td><td
+        align=\"right\" >2</td><td align=\"right\"  >0</td><td align=\"right\" >.333</td><td
+        align=\"right\" >1</td></tr><tr class=\"tableBody\" bgcolor=#f2f2e8><td><a
+        title=\"Nutpunch Owmahgroin (Doug Headley)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=3&amp;seasonId=2012\"
+        target=\"_top\">Nutpunch Owmahgroin</a></td><td align=\"right\" >1</td><td
+        align=\"right\" >2</td><td align=\"right\"  >0</td><td align=\"right\" >.333</td><td
+        align=\"right\" >1</td></tr></table>\n<br /></td><td width=\"2%\">&nbsp;</td><td
+        width=\"48%\" valign=\"top\">\r\n<table width=\"100%\" border=\"0\" cellpadding=\"2\"
+        cellspacing=\"1\" class=\"tableBody\" bgcolor=\"#ffffff\" >\n<tr class=\"tableHead\"
+        bgcolor=#1d7225><td colspan=\"6\">WEST</td></tr><tr class=\"tableSubHead\"
+        bgcolor=#6dbb75><td width=\"50%\">TEAM</td><td align=\"right\" width=\"10%\">W</td><td
+        align=\"right\" width=\"10%\">L</td><td align=\"right\" width=\"10%\">T</td><td
+        align=\"right\" width=\"10%\">PCT</td><td align=\"right\" width=\"10%\">GB</td></tr><tr
+        class=\"tableBody\" bgcolor=#f2f2e8><td><a title=\"Appetite for  DESTRUCTION
+        (Megan Van Linda)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=6&amp;seasonId=2012\"
+        target=\"_top\">Appetite for  DESTRUCTION</a></td><td align=\"right\" >3</td><td
+        align=\"right\" >0</td><td align=\"right\"  >0</td><td align=\"right\" >1.000</td><td
+        align=\"right\" >--</td></tr><tr class=\"tableBody\" bgcolor=#f8f8f2><td><a
+        title=\"Team Goodfellas (john abbruzzi)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=9&amp;seasonId=2012\"
+        target=\"_top\">Team Goodfellas</a></td><td align=\"right\" >2</td><td align=\"right\"
+        >1</td><td align=\"right\"  >0</td><td align=\"right\" >.667</td><td align=\"right\"
+        >1</td></tr><tr class=\"tableBody\" bgcolor=#f2f2e8><td><a title=\"Michael
+        Clarke Duncans (Mike Ferry)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=7&amp;seasonId=2012\"
+        target=\"_top\">Michael Clarke Duncans</a></td><td align=\"right\" >2</td><td
+        align=\"right\" >1</td><td align=\"right\"  >0</td><td align=\"right\" >.667</td><td
+        align=\"right\" >1</td></tr><tr class=\"tableBody\" bgcolor=#f8f8f2><td><a
+        title=\"California Bear Sharks (Devon Chulick)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=8&amp;seasonId=2012\"
+        target=\"_top\">California Bear Sharks</a></td><td align=\"right\" >1</td><td
+        align=\"right\" >2</td><td align=\"right\"  >0</td><td align=\"right\" >.333</td><td
+        align=\"right\" >2</td></tr><tr class=\"tableBody\" bgcolor=#f2f2e8><td><a
+        title=\"Arkansas  BigSEXY  (Eric Martin)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=10&amp;seasonId=2012\"
+        target=\"_top\">Arkansas  BigSEXY </a></td><td align=\"right\" >0</td><td
+        align=\"right\" >3</td><td align=\"right\"  >0</td><td align=\"right\" >.000</td><td
+        align=\"right\" >3</td></tr></table>\n<br /></td></tr>\r\n</table><table width=\"100%\"
+        id=\"xstandTbl_div0\" border=\"0\" cellpadding=\"2\" cellspacing=\"1\" class=\"tableBody\"
+        bgcolor=\"#ffffff\" >\n<tr class=\"tableHead\" bgcolor=#1d7225><td colspan=\"7\">EAST</td></tr><tr
+        class=\"tableSubHead\" bgcolor=#6dbb75><td width=\"40%\">TEAM, OWNER(S)</td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['PF'],sortOrders:['d']}]);\">PF</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['PA'],sortOrders:['d']}]);\">PA</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['HOME'],sortOrders:['d']}]);\">HOME</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['AWAY'],sortOrders:['d']}]);\">AWAY</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['DIV'],sortOrders:['d']}]);\">DIV</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div0',sortBys:['STREAK'],sortOrders:['d']}]);\">STREAK</a></td></tr><tr
+        class=\"evenRow bodyCopy sortableRow\"><td><a title=\"K Cavs Baby AMIRITE
+        (Katie Schlesinger)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=1&amp;seasonId=2012\"
+        target=\"_top\">K Cavs Baby AMIRITE</a> (<a href=\"http://sportsnation.espn.go.com/fans/katherinedaymusic\"
+        target=\"_blank\">Katie Schlesinger</a>)</td><td align=\"right\" class=\"sortablePF\">278</td><td
+        align=\"right\" class=\"sortablePA\">253</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        1.000 001000999 (for sorting) -->1-0-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        1.000 002000999 (for sorting) -->2-0-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        52 (for sorting) -->W2</td></tr><tr class=\"oddRow bodyCopy sortableRow\"><td><a
+        title=\"Team SW Dawgs (Rodney Lemons)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=4&amp;seasonId=2012\"
+        target=\"_top\">Team SW Dawgs</a> (<a href=\"http://sportsnation.espn.go.com/fans/newdad609\"
+        target=\"_blank\">Rodney Lemons</a>)</td><td align=\"right\" class=\"sortablePF\">273</td><td
+        align=\"right\" class=\"sortablePA\">263</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        1.000 001000999 (for sorting) -->1-0-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .667 002000998 (for sorting) -->2-1-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        52 (for sorting) -->W2</td></tr><tr class=\"evenRow bodyCopy sortableRow\"><td><a
+        title=\"Texas Forever (Lydia Carle)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=5&amp;seasonId=2012\"
+        target=\"_top\">Texas Forever</a> (<a href=\"http://sportsnation.espn.go.com/fans/LydMcTyd\"
+        target=\"_blank\">Lydia Carle</a>)</td><td align=\"right\" class=\"sortablePF\">305</td><td
+        align=\"right\" class=\"sortablePA\">290</td><td align=\"right\" class=\"sortableHOME\"><!--
+        1.000 001000999 (for sorting) -->1-0-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .000 000000997 (for sorting) -->0-2-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .333 001000997 (for sorting) -->1-2-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        48 (for sorting) -->L2</td></tr><tr class=\"oddRow bodyCopy sortableRow\"><td><a
+        title=\"LisaNowak4prez Nowack2012 (Remi Moehring)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=2&amp;seasonId=2012\"
+        target=\"_top\">LisaNowak4prez Nowack2012</a> (<a href=\"http://sportsnation.espn.go.com/fans/rrrrremi\"
+        target=\"_blank\">Remi Moehring</a>)</td><td align=\"right\" class=\"sortablePF\">256</td><td
+        align=\"right\" class=\"sortablePA\">292</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .000 000000998 (for sorting) -->0-1-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .000 000000997 (for sorting) -->0-2-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        49 (for sorting) -->L1</td></tr><tr class=\"evenRow bodyCopy sortableRow\"><td><a
+        title=\"Nutpunch Owmahgroin (Doug Headley)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=3&amp;seasonId=2012\"
+        target=\"_top\">Nutpunch Owmahgroin</a> (<a href=\"http://sportsnation.espn.go.com/fans/voodoologic\"
+        target=\"_blank\">Doug Headley</a>)</td><td align=\"right\" class=\"sortablePF\">250</td><td
+        align=\"right\" class=\"sortablePA\">255</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .000 000000997 (for sorting) -->0-2-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        1.000 001000999 (for sorting) -->1-0-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        48 (for sorting) -->L2</td></tr></table>\n<br /><table width=\"100%\" id=\"xstandTbl_div1\"
+        border=\"0\" cellpadding=\"2\" cellspacing=\"1\" class=\"tableBody\" bgcolor=\"#ffffff\"
+        >\n<tr class=\"tableHead\" bgcolor=#1d7225><td colspan=\"7\">WEST</td></tr><tr
+        class=\"tableSubHead\" bgcolor=#6dbb75><td width=\"40%\">TEAM, OWNER(S)</td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['PF'],sortOrders:['d']}]);\">PF</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['PA'],sortOrders:['d']}]);\">PA</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['HOME'],sortOrders:['d']}]);\">HOME</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['AWAY'],sortOrders:['d']}]);\">AWAY</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['DIV'],sortOrders:['d']}]);\">DIV</a></td><td
+        align=\"right\" width=\"10%\"><a class=\"hand\" onclick=\"new Sortable.Batch([{trigger:this,table:'xstandTbl_div1',sortBys:['STREAK'],sortOrders:['d']}]);\">STREAK</a></td></tr><tr
+        class=\"evenRow bodyCopy sortableRow\"><td><a title=\"Appetite for  DESTRUCTION
+        (Megan Van Linda)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=6&amp;seasonId=2012\"
+        target=\"_top\">Appetite for  DESTRUCTION</a> (<a href=\"http://sportsnation.espn.go.com/fans/Megan
+        Van Linda\" target=\"_blank\">Megan Van Linda</a>)</td><td align=\"right\"
+        class=\"sortablePF\">262</td><td align=\"right\" class=\"sortablePA\">213</td><td
+        align=\"right\" class=\"sortableHOME\"><!-- 1.000 001000999 (for sorting)
+        -->1-0-0</td><td align=\"right\" class=\"sortableAWAY\"><!-- 1.000 002000999
+        (for sorting) -->2-0-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        1.000 002000999 (for sorting) -->2-0-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        53 (for sorting) -->W3</td></tr><tr class=\"oddRow bodyCopy sortableRow\"><td><a
+        title=\"Team Goodfellas (john abbruzzi)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=9&amp;seasonId=2012\"
+        target=\"_top\">Team Goodfellas</a> (<a href=\"http://sportsnation.espn.go.com/fans/Goodfellas1611\"
+        target=\"_blank\">john abbruzzi</a>)</td><td align=\"right\" class=\"sortablePF\">301</td><td
+        align=\"right\" class=\"sortablePA\">282</td><td align=\"right\" class=\"sortableHOME\"><!--
+        1.000 002000999 (for sorting) -->2-0-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .000 000000998 (for sorting) -->0-1-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .667 002000998 (for sorting) -->2-1-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        49 (for sorting) -->L1</td></tr><tr class=\"evenRow bodyCopy sortableRow\"><td><a
+        title=\"Michael Clarke Duncans (Mike Ferry)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=7&amp;seasonId=2012\"
+        target=\"_top\">Michael Clarke Duncans</a> (<a href=\"http://sportsnation.espn.go.com/fans/nmferry\"
+        target=\"_blank\">Mike Ferry</a>)</td><td align=\"right\" class=\"sortablePF\">253</td><td
+        align=\"right\" class=\"sortablePA\">269</td><td align=\"right\" class=\"sortableHOME\"><!--
+        1.000 001000999 (for sorting) -->1-0-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        1.000 002000999 (for sorting) -->2-0-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        51 (for sorting) -->W1</td></tr><tr class=\"oddRow bodyCopy sortableRow\"><td><a
+        title=\"California Bear Sharks (Devon Chulick)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=8&amp;seasonId=2012\"
+        target=\"_top\">California Bear Sharks</a> (<a href=\"http://sportsnation.espn.go.com/fans/ThePeoplesChulick\"
+        target=\"_blank\">Devon Chulick</a>)</td><td align=\"right\" class=\"sortablePF\">236</td><td
+        align=\"right\" class=\"sortablePA\">260</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .000 000000998 (for sorting) -->0-1-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .500 001000998 (for sorting) -->1-1-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .000 000000997 (for sorting) -->0-2-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        51 (for sorting) -->W1</td></tr><tr class=\"evenRow bodyCopy sortableRow\"><td><a
+        title=\"Arkansas  BigSEXY  (Eric Martin)\" href=\"/ffl/clubhouse?leagueId=1166249&amp;teamId=10&amp;seasonId=2012\"
+        target=\"_top\">Arkansas  BigSEXY </a> (<a href=\"http://sportsnation.espn.go.com/fans/hoyt0810\"
+        target=\"_blank\">Eric Martin</a>)</td><td align=\"right\" class=\"sortablePF\">219</td><td
+        align=\"right\" class=\"sortablePA\">256</td><td align=\"right\" class=\"sortableHOME\"><!--
+        .000 000000998 (for sorting) -->0-1-0</td><td align=\"right\" class=\"sortableAWAY\"><!--
+        .000 000000997 (for sorting) -->0-2-0</td><td align=\"right\" class=\"sortableDIV\"><!--
+        .000 000000996 (for sorting) -->0-3-0</td><td align=\"right\" class=\"sortableSTREAK\"><!--
+        47 (for sorting) -->L3</td></tr></table>\n<br /><div class=\"games-footercol\"><div
+        class=\"faqft_bg\"><div class=\"faqft_header\"><a href=\"/ffl/content?page=fflrulesindex2012\"
+        target=\"_blank\"><div class=\"faqft_hdimage_fh\"></div></a><div id=\"faqft_moreless_btn\"
+        class=\"games-external-btn faqft_moreless_btn\" onclick=\"showHideFAQs();\">Expand
+        Help Topics+</div><div class=\"faqft_hdimage_hl\"></div></div><div id=\"faq_qlinks\"
+        class=\"faq_qlinks\"style=\"display:none;\"><ul><li><a href=\"\" class=\"flexpop\"
+        content=\"ajax#/ffl/resources/help/faq?name=when-do-standings-update&popup=true\"
+        cache=\"true\" instance=\"_faq\">When do standings update?</a></li><li><a
+        href=\"\" class=\"flexpop\" content=\"ajax#/ffl/resources/help/faq?name=why-are-some-stats-missing-or-incorrect&popup=true\"
+        cache=\"true\" instance=\"_faq\">Why are some stats missing or incorrect?</a></li></ul><ul><li><a
+        href=\"\" class=\"flexpop\" content=\"ajax#/ffl/resources/help/faq?name=why-cant-i-connect-to-smack-boards-espn-live-scoring&popup=true\"
+        cache=\"true\" instance=\"_faq\">Why can't I connect to Smack Boards / ESPN
+        live scoring?</a></li></ul><div class=\"clear\"></div><div class=\"faqft_ft\"><img
+        src=\"http://games-ak.espn.go.com/s/lm/images/arrow.jpg\"><a style=\"text-decoration:none;\"
+        href=\"/ffl/content?page=fflrulesfaq2012\" target=\"_blank\">MORE FAQ'S</a></div></div></div>\n<script
+        type=\"text/javascript\">\nfunction showHideFAQs() {\n\tif (jQuery('#faq_qlinks').is(':visible'))
+        {\t\n\t\tjQuery('#faq_qlinks').hide();\n\t\tjQuery(\"#faqft_moreless_btn\").html(\"Expand
+        Help Topics +\");\n\t} else { \n\t\tjQuery('#faq_qlinks').show(); \n\t\tjQuery(\"#faqft_moreless_btn\").html(\"Collapse
+        Help Topics -\");\n\t}\n}\n</script><div style=\"margin:25px 0px 0px 0px;\"><script
+        type=\"text/javascript\">adsonar_placementId=1508426;adsonar_pid=2187771;adsonar_ps=-1;adsonar_zw=956;adsonar_zh=150;adsonar_jv='ads.espn.adsonar.com';</script><script
+        language=\"JavaScript\" src=\"http://js.adsonar.com/js/adsonar.js\"></script></div></div></div>\n<br><br>\n</div>\n</div>\n</div>\n<!--
+        ////////// start: Transitional Footer ////////// -->\n<!--start transitional
+        elements wrapper -->\n<div class=\"transitional-elements\">\n<!--[if IE 6]><div
+        class=\"ie6\"><![endif]-->\n<!--[if IE 7]><div class=\"ie7\"><![endif]-->\n<!--[if
+        IE 8]><div class=\"ie8\"><![endif]-->\n<div id=\"trans-footer\" class=\"container\">\n<p><strong><a
+        href=\"http://www.espn.com\">ESPN.com</a></strong>  |  <a href=\"https://r.espn.go.com/espn/memberServices\">Member
+        Services</a> | <a href=\"http://games.espn.go.com/frontpage\">Fantasy Games</a>
+        | <a href=\"http://games.espn.go.com/ffl/content?page=fflrulesindex2012\">Help</a>
+        | <a href=\"http://preferences.truste.com/2.0/?type=espn&affiliateId=148\"
+        onclick=\"window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+        return false\">Interest-Based Ads</a> | <a href=\"http://games.espn.go.com/ffl/feedback\">Give
+        Us Your Feedback</a></p>\n\t\n<p>Call <strong>1-888-549-ESPN</strong> for
+        help on all things Fantasy</p>\n\n<p>Copyright &copy;2012 ESPN Internet Ventures.
+        <a href=\"http://disney.go.com/corporate/legal/terms.html\">Terms of Use</a>
+        and <a href=\"http://disney.go.com/corporate/privacy/pp_espn.html\">Privacy
+        Policy and Safety Information/Your California Privacy Rights</a> are applicable
+        to this site.<br><br>Officially Licensed Product of NFL PLAYERS. Visit <a
+        href=\"http://www.nflplayers.com\" target=\"new\">www.nflplayers.com</a>.</p>\n</div>\n<!--
+        end transitional elements wrapper -->\n<!--[if lte IE 8]></div><![endif]-->\n</div>\n<!--
+        ////////// end: Transitional Footer ////////// -->\n</div>\n<div id=\"nav-wrapper\"
+        class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<p><!--
+        begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!-- start:
+        Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a class=\"myespn\"
+        ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li class=\"sport-menu
+        default t-nfl\" data-sportid=\"28\" id=\"menu-nfl\"><a href=\"http://scores.espn.go.com/nfl/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!-- start:
+        Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
+        id=\"menu-mlb\"><a href=\"http://scores.espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
+        start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
+        id=\"menu-nba\"><a href=\"http://espn.go.com/nba/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nba\">NBA</a></li>\n<!--
+        start: Menuitem :: NHL -->\n<li class=\"sport-menu default t-nhl\" data-sportid=\"90\"
+        id=\"menu-nhl\"><a href=\"http://espn.go.com/nhl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nhl\">NHL</a></li>\n<!--
+        start: Menuitem :: NCAA FB -->\n<li class=\"sport-menu default t-ncf\" data-sportid=\"23\"
+        id=\"menu-ncf\"><a href=\"http://espn.go.com/college-football/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncf\">NCAA
+        FB</a></li>\n<!-- start: Menuitem :: NCAA BB -->\n<li class=\"sport-menu default
+        t-ncb\" data-sportid=\"41\" id=\"menu-ncb\"><a href=\"http://espn.go.com/mens-college-basketball/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_ncb\">NCAA BB</a></li>\n<!--
+        start: Menuitem :: NASCAR -->\n<li class=\"sport-menu default t-nascar\" data-sportid=\"2020\"
+        id=\"menu-nascar\"><a href=\"http://espn.go.com/racing/nascar/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nascar\">NASCAR</a></li>\n<!--
+        start: Menuitem :: SOCCER -->\n<li class=\"sport-menu default t-soccer\" data-sportid=\"600\"
+        id=\"menu-soccer\"><a href=\"http://espn.go.com/sports/soccer/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_soccer\">SOCCER</a></li>\n<!--
+        start: Menuitem :: GOLF -->\n<li class=\"sport-menu t-golf\" data-sportid=\"1106\"
+        id=\"menu-golf\" style=\"display: none;\"><a href=\"http://espn.go.com/golf/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_golfl\">GOLF</a></li>\n<!--
+        start: Menuitem :: TENNIS -->\n<li class=\"sport-menu t-tennis\" data-sportid=\"850\"
+        id=\"menu-tennis\" style=\"display: none;\"><a href=\"http://espn.go.com/tennis/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_tennis\">TENNIS</a></li>\n<!--
+        start: Menuitem :: BOXING-->\n<li class=\"sport-menu t-boxing\" data-sportid=\"1000\"
+        id=\"menu-boxing\" style=\"display: none;\"><a href=\"http://espn.go.com/boxing/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_boxing\">BOXING</a></li>\n<!--
+        start: Menuitem :: MMA -->\n<li class=\"sport-menu t-mma\" data-sportid=\"3301\"
+        id=\"menu-mma\" style=\"display: none;\"><a href=\"http://espn.go.com/mma/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mma\">MMA</a></li>\n<!-- start:
+        Menuitem :: ALL SPORTS -->\n<li class=\"nav-allsports t-allsports\" id=\"menu-allsports\"><a
+        href=\"http://espn.go.com/sports/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_allsports\">MORE
+        SPORTS</a></li>\n<!-- start: Menuitem :: INSIDER -->\n<li class=\"sport-menu
+        t-insider\" id=\"menu-insider\" style=\"display: none;\"><a href=\"http://insider.espn.go.com/insider/index\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_insider\">INSIDER</a></li>\n<!--
+        start: Menuitem :: SPORTSNATION -->\n<li class=\"sport-menu t-sportsnation\"
+        id=\"menu-sportsnation\" style=\"display: none;\"><a href=\"http://espn.go.com/sportsnation/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_sportsnation\">SN</a></li>\n<!--
+        start: Menuitem :: RADIO & MORE -->\n<li class=\"right-menu two-line last
+        t-radio\" id=\"menu-radio\"><a href=\"http://espn.go.com/espnradio/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_radioandmore\">RADIO<span>&amp;
+        MORE</span></a></li>\n<!-- start: Menuitem :: espnW & PLAYBOOK -->\n<li class=\"right-menu
+        two-line t-page2\" id=\"menu-page2\"><a href=\"http://espn.go.com/espnw/\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_espnwandplaybook\" target=\"_blank\">espnW<span>&amp;
+        PLAYBOOK</span></a></li>\n<!-- start: Menuitem :: FANTASY & GAMES -->\n<li
+        class=\"right-menu two-line t-fantasy selected\" id=\"menu-fantasy\"><a href=\"http://games.espn.go.com/frontpage\"
+        name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_fantasy\">FANTASY<span>&amp;
+        GAMES</span></a></li>\n<!-- start: Menuitem :: WATCH -->\n<li class=\"right-menu
+        t-watch\" id=\"menu-watch\"><a href=\"http://espn.go.com/video/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_watch\">WATCH</a></li>\n</ul>\n<!--
+        end site nav --></div>\n<div class=\"nav-main-secondary\">\n<ul>\n<div class=\"nav-main-secondary\"><ul><div
+        class=\"nav-main-secondary\">\n<ul>\n<li class=\"subnav-frontpage\"><a href=\"http://games.espn.go.com/frontpage/football\">Fantasy
+        Football</a></li>\n<!--<li class=\"subnav-create\"><a href=\"http://games.espn.go.com/ffl/welcome\">Create
+        or Join a League</a></li>\n<li class=\"subnav-draftkit\"><a href=\"http://games.espn.go.com/frontpage/ffldraftkit\">Draft
+        Kit</a></li>-->\n<li class=\"subnav-tools-projections-sortable\"><a href=\"http://games.espn.go.com/ffl/tools/projections?leagueId=1166249\">Projections</a></li>\n<li><a
+        href=\"http://games.espn.go.com/frontpage/fantasyRankings\">Weekly Rankings</a></li>\n<li
+        class=\"subnav-addeddropped\"><a href=\"http://games.espn.go.com/ffl/addeddropped\">Added/Dropped</a></li>\n<li
+        class=\"subnav-resources-playernews\"><a href=\"http://games.espn.go.com/ffl/resources/playernews\">Player
+        News</a></li>\n<li class=\"subnav-scoring\"><a href=\"http://games.espn.go.com/ffl/leaders\">Scoring
+        Leaders</a></li>\n<li class=\"subnav-corrections\"><a href=\"http://games.espn.go.com/ffl/tools/statcorrections\">Stat
+        Corrections</a></li>\n<li class=\"subnav-rules\"><a href=\"http://games.espn.go.com/ffl/content?page=fflrulesindex2012\">Rules</a></li>
+        \n<li class=\"subnav-forum\"><a href=\"http://games.espn.go.com/frontpage/forums#!/category/1313609200-908-35\">Forums</a></li>\n<li
+        class=\"expandable\"><a href=\"javascript:void(0);\"><span>More</span></a>
+        \  \n<div>\n<dl style=\"border:none;\">\n<dd><a href=\"http://itunes.apple.com/us/app/espn-fantasy-football-2012/id389073226?mt=8\">Fantasy
+        Football iTunes app</a></dd>\n<dd><a href=\"https://play.google.com/store/apps/details?id=com.espn.espnfantasyfootball&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5lc3BuLmVzcG5mYW50YXN5Zm9vdGJhbGwiXQ\">Fantasy
+        Football Android app</a></dd>\n<dd><a href=\"http://itunes.apple.com/us/app/espn-fantasy-football-2012/id555376968?ls=1&mt=8\">Fantasy
+        Football iPad app</a></dd>\n<dd><a href=\"http://games.espn.go.com/ffl/livedraftresults\">Average
+        Draft Position</a></dd>\n<dd><a href=\"http://games.espn.go.com/frontpage/ffldraftkit\">Draft
+        Kit</a></dd>\n<!--<dd><a href=\"http://games.espn.go.com/ffl/livedraftlobby\">Live
+        Draft Lobby</a></dd>-->\n<dd><a href=\"http://games.espn.go.com/ffl/resources/leaderboard?leaderboardGroupId=0\">Leaderboards</a></dd>\n\n<dd><a
+        href=\"http://games.espn.go.com/ffl/tools/undroppables\">Undroppables</a></dd>\n<!--<dd><a
+        href=\"http://games.espn.go.com/ffl/leaders\">Scoring Leaders</a></dd>-->\n<dd><a
+        href=\"http://games.espn.go.com/ffl/pointsagainst\">Points Against</a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/insider/fantasy/football/valuecalculator\">Custom
+        Dollar Value Generator<img width=\"8\" height=\"9\" style=\"margin-left:3px;\"
+        alt=\"Insider\" src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n<dd><a
+        href=\"http://games.espn.go.com/ffl/content?page=fflrulesfaq2012\">FAQ</a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/fantasy/football/ffl/story?page=goallinegrid\">Goal-Line
+        Grid <img width=\"8\" height=\"9\" style=\"margin-left:3px;\" alt=\"Insider\"
+        src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n<dd><a
+        href=\"http://insider.espn.go.com/insider/fantasy/answerguys/index\">Answer
+        Guys <img width=\"8\" height=\"9\" style=\"margin-left:3px;\" alt=\"Insider\"
+        src=\"http://a.espncdn.com/i/design07/mast/tinyin.gif\" /></a></dd>\n</dl>
+        \ \n</div> \n</li> \n</ul>\n</div>\n</ul></div></ul>\n</div>\n<script>espn.core.init.nav();</script>\n</div>\n</div>\n</div>\n</div>\n</div>\n</td></tr></table>\n</div>\n\n<!--
+        SiteCatalyst code version: H.21.3 Copyright 1997-2010 Omniture, Inc. http://www.omniture.com
+        -->\n<script type=\"text/javascript\">\n\tvar undef = 'undefined'\n\t,s_account=\"wdgespfantasy\"\n\t,omniPageName
+        = \"fantasy:football:ffl:standings\"\t\n\t\n\t,insiderStatus = \"\"\n\t,anGen
+        = \"\"\n\t,anYear = \"\"\n\t,anDateString = \"\"\n\t,anLoginStatus = \"\"\n\t,callOmniture
+        = function(){\n\t\t/*-- core story s_omni properties --*/\n\t\tif (typeof
+        anCV != \"undefined\"){anParseLoginBarInfo(anCV);}\n\t\ts_omni.pageName=\"football:ffl:standings\";\n\t\ts_omni.server
+        = window.location.host; // Server from the Host\n\t\ts_omni.channel = \"football\";\n\t\ts_omni.prop1
+        = \"fantasy\";\n\t\ts_omni.prop4 = \"game-lm-gen\";\n\t\ts_omni.prop5 = \"football:ffl\";\n\t\ts_omni.prop11
+        = (insiderStatus !== null) ? insiderStatus + \":premium-no\" : \"premium-no\";\n\t\ts_omni.prop17
+        = \"en\";\n\t\ts_omni.prop21 = anDateString;\n\t\ts_omni.prop22 = anGen;\n\t\ts_omni.prop25
+        = \"football\";\n\t\ts_omni.prop29 = anLoginStatus;\n\t\ts_omni.prop30 = \"n\";\n\t\ts_omni.hier1
+        = \"football:ffl:standings\";\n\t\ts_omni.eVar7 = anYear + \":\" + anGen +
+        \":\" + anLoginStatus + \":\" + s_omni.prop11 + \":\";\n\t\ts_omni.eVar9 =
+        \"en\";\n\t\ts_omni.eVar13 = \"football:ffl:standings\";\n\t\ts_omni.eVar19
+        = \"football\";\n\t\t\n\t\tif (s_omni.prop11==\"anonymous:premium-yes\" ||
+        s_omni.prop11==\"insider-no:premium-yes\" && typeof s_omni.prop4!=\"undefined\"
+        &&\n\t\t\t(s_omni.prop4==\"story\" || s_omni.prop4==\"blog\")) {\n\t\t\tif
+        (typeof s_omni.events != \"undefined\" && s_omni.events!=\"\") {\n\t\t\t\ts_omni.events
+        = s_omni.events+\",event8\" }\n\t\t\telse { s_omni.events=\"event8\" }\n\t\t}\n\t\tanDebugCase
+        = \"ver_15Feb11_0_\";\n\t\t/************* DO NOT ALTER ANYTHING BELOW THIS
+        LINE ! **************/\n\t\tvar s_code=s_omni.t();\n\t\tif(s_code) {\n\t\t\tjQuery('body').append(s_code);\n\t\t}\n\t};\n\t\n\n\n\tjQuery(function($)
+        {\n\t\t// we want to load the analytics files from the cache if possible -
+        so, let's use full $.ajax() calls\n\t\t$.ajax({\n\t\t\ttype:'GET',\n\t\t\turl:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js',\n\t\t\tdataType:
+        'script',\n\t\t\tcache: true,\n\t\t\tsuccess: function() {\n\t\t\t\tvar lgSrc;\n\t\t\t\tif(typeof
+        anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
+        != null) {\n\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t$.getScript(lgSrc);
+        // we don't want this to be cached - so we'll use the $.getScript() method\n\t\t\t\t}
+        else {\n\t\t\t\t\tcallOmniture();\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t});\n\n</script>\n<!--
+        End SiteCatalyst code version: H.21. --></body>\n</html>\n"
+    http_version: 
+  recorded_at: Thu, 27 Sep 2012 05:48:16 GMT
+recorded_with: VCR 2.2.4
